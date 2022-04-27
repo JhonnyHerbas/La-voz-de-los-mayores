@@ -24,19 +24,19 @@
         padding: 30px !important;
     }
     select{
-        font-size: 18px !important;
+        font-size: 20px !important;
     }
     button{
-        font-size: 18px !important;
+        font-size: 20px !important;
     }
     .registrar{
-        font-size: 18px !important;
+        font-size: 20px !important;
     }
     .cancelar{
-        font-size: 18px !important;
+        font-size: 20px !important;
     }
     label {
-        font-size: 18px !important;
+        font-size: 23px !important;
     }
     .container-medio {
         width: 100% !important;
@@ -138,7 +138,7 @@ input {
 
 input[type=text] {
     border: none;
-    border-bottom: 2px solid rgb(255, 94, 0);
+    border-bottom: 2px solid white;
   }
 
 select{
@@ -155,7 +155,7 @@ select{
     margin-bottom: 10px;
     display:inline-block;
     vertical-align:middle;
-    font-size: 20px;
+    font-size: 19px;
     background-color: #d6d6d6d3;
     margin-left:20px;
     width: 500px;
@@ -208,7 +208,7 @@ label {
     width: 60%;
     transform: translate(33%, 12%);
     box-shadow: 0 0 1rem rgba(9, 0, 0, 3);
-    background-color: rgba(212, 195, 184, 0.479);
+    background-color: rgba(228, 179, 147, 0.479);
     border-radius: 5px;
 }
 
