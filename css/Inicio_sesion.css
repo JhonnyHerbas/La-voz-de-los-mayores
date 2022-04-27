@@ -145,15 +145,58 @@ input[type=text] {
     margin: 90px 260px; 
 }
 
-
-
 /*medio der*/
+
 .container-der{
-    height: 850px;
-    background-color: aqua;
-    width: 50%;
-    float: right;
-} /*footer*/
+    margin-top: -10px;
+    position: relative;
+    margin-left: 25%;
+    height: 600px;
+    width: 45%;
+    
+    transform: translate(55%, 20%);
+    box-shadow: 0 0 1rem rgba(9, 0, 0, 3);
+    background-color: rgba(228, 179, 147, 0.479);
+}
+.uno{
+    font-family: tahoma;
+    font-size: 30px;
+    
+    position: relative;
+    left: -210px;
+    top: 150px;
+}
+.dos{
+    font-family: tahoma;
+    font-size: 30px;
+    position: relative;
+    left: -220px;
+    top: 200px;
+
+}
+.tres{
+    font-family: tahoma;
+    font-size: 30px;
+    position: relative;
+    left: -140px ;
+    top:250px ;
+
+}
+
+.reg{
+    background: #555855;
+    color: white;
+    height: 40px;
+    width: 25%;
+    font-family:Tahoma ;
+    font-size:23px ;
+    margin: 334px -160px;
+}
+
+
+
+
+/*footer*/
 .container-inferior {
     background-color: #555855;
     position: relative;
