@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Usuario</title>
+    <link rel="stylesheet" href="css/estilos_registro.css">
+    <link rel="shortcut icon" href="logo1.png">
+</head>
+<body>
+    <div class="cotainer_todo">
+        <header class="general">
+                <div class="container-superior">
+                    <a href="index.html"><img class="logo" src="logo1.png"></a>
+                    <h1 class="title">La Voz de los mayores</h1>
+                </div>  
+                
+                <div class="container_atras">
+                    <a class="pagprinc" href="index.html">Atrás</a>
+                </div>
+                         
+        </header>
+        <div class="container_medio">           
+            <div class="container_formulario">
+                <form action="registro_usuario.php" method="post" class="form">
+                    <div class="titulo">
+                        <h1 class="registrarse">Registrarse</h1>
+                    </div><br>
+                    <label for="name" class="name">Nombre de usuario:</label><br>
+                        <input type="text" id="name" class="lol" name="nombre" maxlength="50" minlength="4" required><br><br>
+                    <label for="correo" class="correo">Correo:</label><br>
+                        <input type="email" id="correo"  class="lol" name="correo" maxlength="100" required><br><br>
+                    <label for="contraseña">Contraseña:</label><br>
+                        <input type="password" name="contrasena" id="contraseña"  class="lol" maxlength="20" minlength="8" required><br><br>
+                    <label for="con_contra">Confirmar contraseña:</label><br>
+                        <input type="password" name="contrasena2" value="" id="con_contra"  class="lol" maxlength="20" minlength="8" required><br><br>
+                    <div class="container_boton">
+                        <button class="confirmar">Confirmar</button>
+                       <!-- <button class="cancelar">Cancelar</button>-->
+                    </div>
+                </form>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
