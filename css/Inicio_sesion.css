@@ -80,19 +80,39 @@ body {
 
 article{
     height: 850px;
-    background-color: bisque;
+    background-color: #f19236;
     width: 50%;
     float: left;
+  
+
 }
 .container-izq{
     margin-top: -40px;
     position: relative;
     margin-left: 25%;
-    height: 900px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr; 
+    height: 600px;
+    
+    transform: translate(-20%, 27%);
+    box-shadow: 0 0 1rem rgba(9, 0, 0, 3);
+    background-color: rgba(228, 179, 147, 0.479);
+    width: 80%;
+    
+}
+.form-title{
+    font: Tahoma;
+
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.camp{
+    display:inline-block;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 23px;
+    width: 180px;
 }
 input {
     margin-top: 7px;
@@ -108,12 +128,24 @@ input {
 
 input[type=text] {
     border: none;
-    border-bottom: 2px solid rgb(255, 94, 0);
+    border-bottom: 4px solid white;
   }
   input[type=password] {
     border: none;
-    border-bottom: 2px solid rgb(255, 94, 0);
+    border-bottom: 4px solid white;
   }
+
+.entrar{
+    width: 25%;
+    height: 40px;
+    background-color: #555855;
+    color: aliceblue;
+    font-family: Tahoma;
+    font-size: 23px;  
+    margin: 90px 260px; 
+}
+
+
 
 /*medio der*/
 .container-der{
