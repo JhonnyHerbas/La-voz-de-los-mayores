@@ -42,7 +42,7 @@ try{
         )
     );
 
-    $ruta = "https://drive.google.com/open?id=$result->id";
+    $ruta = $result->id;
 
     $sql = "INSERT INTO audiolibro(NOMBRE_AL,AUTOR_AL,NARRADOR_AL,CATEGORIA_AL,FECHAPUBLICACION_AL,ENLACE_AL) VALUES ('$name','$autor','$narrador','$categoria',NOW(),'$ruta');";
     $mysqli->query($sql);
