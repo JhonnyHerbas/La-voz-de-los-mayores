@@ -26,20 +26,20 @@
     <section>
         <article>
             <div class="container-izq">
-                <div class="iniciar-sesion">
+                <form action="inicio_sesion.php" method="post" class="iniciar-sesion">
                     <h2 class="form-title">Iniciar Sesion</h2>
                     <div class="block">
-                      <label class="camp">Usuario : </label>
-                      <input type="text" maxlength="50">
-                     </div>
+                         <label class="camp">Usuario : </label>
+                             <input type="text" minlength="4" maxlength="50" name="usuario" required>
+                    </div>
                      <div class="block">
                         <label class="camp">Cotraseña : </label>
-                        <input type="password" maxlength="50">
+                        <input type="password" minlength="8" maxlength="50" name="contrasena" required>
                     </div>
                     <div class="boton-ingreso">
-                        <a href=""><button class="entrar">Entrar</button></a>
+                        <button class="entrar">Entrar</button>
                     </div>
-                </div>
+                </form>
             </div>           
         </article>
         <main>
