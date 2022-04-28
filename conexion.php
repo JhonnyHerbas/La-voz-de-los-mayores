@@ -10,5 +10,6 @@
     if(!$connection){
         echo "Base de datos no conectada";
     }
+    $mysqli = new mysqli("localhost", "root", "", "lavozdelosmayores");
 
 ?>
