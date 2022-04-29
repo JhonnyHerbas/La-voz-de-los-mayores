@@ -14,12 +14,14 @@ try{
     $name = $_POST['name'];
     $artista = $_POST['artista'];
     $genero = $_POST['genero'];
+
 //verificar que el nombre no se repita
-            $query_nombre="SELECT * FROM `musica` WHERE NOMBRE_M='$name' and AUTOR_M='$artista' ";
-            $verificar_nombre = mysqli_query($connection,$query_nombre);
-            $row_cont = $verificar_nombre->num_rows;
-            if($row_cont> 0){
-                echo "<!DOCTYPE html>
+
+    $query_nombre="SELECT * FROM `musica` WHERE NOMBRE_M='$name' and AUTOR_M='$artista' ";
+    $verificar_nombre = mysqli_query($connection,$query_nombre);
+    $row_cont = $verificar_nombre->num_rows;
+     if($row_cont> 0){
+         echo "<!DOCTYPE html>
     <html lang='en'>
     
     <head>
