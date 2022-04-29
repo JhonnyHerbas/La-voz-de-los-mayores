@@ -22,38 +22,44 @@ try{
     $row_cont = $verificar_nombre->num_rows;
      if($row_cont> 0){
          echo "<!DOCTYPE html>
-    <html lang='en'>
-    
-    <head>
-        <title>La Voz de los mayores</title>
-        <meta charset='UTF-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    
-        <link href='css/style-regMus.css' rel='stylesheet' >
-        <link rel='shortcut icon' href='logo1.png'>
-    
-    </head>
-    
-    <body>
-        <header class='header'>
-            <div class='container-superior'>
-                <div>
-                    <a href='index.html'><img class='logo' src='logo1.png'> </a>
-                    <h1 class='title'> La Voz de los mayores</h1>
-                </div>
-                <nav class='navigation'>
-                    <ul>
-                        <li><a class='pagprinc' href='regMus.html'>Atrás</a></li>
-                    </ul>
-                </nav>
-    
-            </div>
-        </header>
-        <main class='main'>
-            <div class='container-medio'>
-                <label>La Musica ya se encuentra registrada, intente subir otra cancion</label>
-            </div>
-        </main>
+         <html lang='en'>
+         <head>
+           <title>La Voz de los mayores</title>
+           <meta charset='UTF-8'>
+           <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
+         
+           <link href='css/style-ventana.css' rel='stylesheet'>
+           <link rel='shortcut icon' href='logo1.png'>
+         </head>
+         <body>
+           <header class='header'>
+               <div class='container-superior'>
+                   <div>
+                       <a href='index.html'><img class='logo' src='logo1.png'> </a> 
+                       <h1 class='title'>  La Voz de los mayores</h1>   
+                   </div>
+                   <nav class='navigation'>
+                       <ul>
+                           <li><a class='pagprinc' href='index.html'>Atrás</a></li>
+                       </ul>
+                   </nav>
+                   
+               </div>
+           </header>
+           <main class='main'>
+             <div class='container-medio'>
+               <div class='ventana'>
+                   <h2 class='form-title'>La canción ya se encuentra registrada, intente con otra</h2>
+                   <div class='block'>
+                   </div>
+                 
+         
+               <div class='botones'>
+                   <a href='regMus.html'><button class='ok'>OK</button></a> 
+         
+               </div>
+           </div>        
+         </main>
     </body>
     
     <footer>
@@ -99,44 +105,57 @@ try{
             
     echo "<!DOCTYPE html>
     <html lang='en'>
-    
     <head>
-        <title>La Voz de los mayores</title>
-        <meta charset='UTF-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <title>La Voz de los mayores</title>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
     
-        <link href='css/style-regMus.css' rel='stylesheet' >
-        <link rel='shortcut icon' href='logo1.png'>
-    
+      <link href='css/style-ventana.css' rel='stylesheet'>
+      <link rel='shortcut icon' href='logo1.png'>
     </head>
-    
     <body>
-        <header class='header'>
-            <div class='container-superior'>
-                <div>
-                    <a href='index.html'><img class='logo' src='logo1.png'> </a>
-                    <h1 class='title'> La Voz de los mayores</h1>
-                </div>
-                <nav class='navigation'>
-                    <ul>
-                        <li><a class='pagprinc' href='index.html'>Atrás</a></li>
-                    </ul>
-                </nav>
+      <header class='header'>
+          <div class='container-superior'>
+              <div>
+                  <a href='index.html'><img class='logo' src='logo1.png'> </a> 
+                  <h1 class='title'>  La Voz de los mayores</h1>   
+              </div>
+              <nav class='navigation'>
+                  <ul>
+                      <li><a class='pagprinc' href='index.html'>Atrás</a></li>
+                  </ul>
+              </nav>
+              
+          </div>
+      </header>
+      <main class='main'>
+        <div class='container-medio'>
+          <div class='ventana'>
+              <h2 class='form-title'>Se registro correctamente</h2>
+              <div class='block'>
+              </div>
+            
     
-            </div>
-        </header>
-        <main class='main'>
-            <div class='container-medio'>
-                <label>Musica Registrada</label>
-            </div>
-        </main>
+          <div class='botones'>
+              <a href='musica.html'><button class='ok'>OK</button></a> 
+    
+          </div>
+    
+    
+      </div>
+      
+                
+        
+    </main>
+      
+    
     </body>
     
     <footer>
-        <div class='container-inferior'>
+      <div class='container-inferior'>
     
-        </div>
-    
+      </div>
+      
     </footer>
     
     </html>";

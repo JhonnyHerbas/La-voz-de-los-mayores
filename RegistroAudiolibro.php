@@ -16,43 +16,49 @@ try{
     $narrador = $_POST['narrador'];
     $categoria = $_POST['categoria'];
 
-    $query_nombre="SELECT * FROM `audiolibro` WHERE NOMBRE_AL='$name' and AUTOR_AL='$artista' and NARRADOR_AL='$narrador'";
+    $query_nombre="SELECT * FROM `audiolibro` WHERE NOMBRE_AL='$name' and AUTOR_AL='$autor' and NARRADOR_AL='$narrador'";
     $verificar_nombre = mysqli_query($connection,$query_nombre);
     $row_cont = $verificar_nombre->num_rows;
      if($row_cont> 0){
          echo "<!DOCTYPE html>
-    <html lang='en'>
-    
-    <head>
-        <title>La Voz de los mayores</title>
-        <meta charset='UTF-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    
-        <link href='css/style-regMus.css' rel='stylesheet' >
-        <link rel='shortcut icon' href='logo1.png'>
-    
-    </head>
-    
-    <body>
-        <header class='header'>
-            <div class='container-superior'>
-                <div>
-                    <a href='index.html'><img class='logo' src='logo1.png'> </a>
-                    <h1 class='title'> La Voz de los mayores</h1>
-                </div>
-                <nav class='navigation'>
-                    <ul>
-                        <li><a class='pagprinc' href='regMus.html'>Atrás</a></li>
-                    </ul>
-                </nav>
-    
-            </div>
-        </header>
-        <main class='main'>
-            <div class='container-medio'>
-                <label>La Musica ya se encuentra registrada, intente subir otra cancion</label>
-            </div>
-        </main>
+         <html lang='en'>
+         <head>
+           <title>La Voz de los mayores</title>
+           <meta charset='UTF-8'>
+           <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
+         
+           <link href='css/style-ventana.css' rel='stylesheet'>
+           <link rel='shortcut icon' href='logo1.png'>
+         </head>
+         <body>
+           <header class='header'>
+               <div class='container-superior'>
+                   <div>
+                       <a href='index.html'><img class='logo' src='logo1.png'> </a> 
+                       <h1 class='title'>  La Voz de los mayores</h1>   
+                   </div>
+                   <nav class='navigation'>
+                       <ul>
+                           <li><a class='pagprinc' href='index.html'>Atrás</a></li>
+                       </ul>
+                   </nav>
+                   
+               </div>
+           </header>
+           <main class='main'>
+             <div class='container-medio'>
+               <div class='ventana'>
+                   <h2 class='form-title'>El audiolibro ya se encuentra registrado, intente con otro</h2>
+                   <div class='block'>
+                   </div>
+                 
+         
+               <div class='botones'>
+                   <a href='regAudiolibro.html'><button class='ok'>OK</button></a> 
+         
+               </div>
+           </div>        
+         </main>
     </body>
     
     <footer>
@@ -99,44 +105,57 @@ try{
 
     echo "<!DOCTYPE html>
     <html lang='en'>
-    
     <head>
-        <title>La Voz de los mayores</title>
-        <meta charset='UTF-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <title>La Voz de los mayores</title>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
     
-        <link href='css/estilo_regAudiolibro.css' rel='stylesheet'>
-        <link rel='shortcut icon' href='logo1.png'>
-    
+      <link href='css/style-ventana.css' rel='stylesheet'>
+      <link rel='shortcut icon' href='logo1.png'>
     </head>
-    
     <body>
-        <header class='header'>
-            <div class='container-superior'>
-                <div>
-                    <a href='index.html'><img class='logo' src='logo1.png'> </a>
-                    <h1 class='title'> La Voz de los mayores</h1>
-                </div>
-                <nav class='navigation'>
-                    <ul>
-                        <li><a class='pagprinc' href='index.html'>Atrás</a></li>
-                    </ul>
-                </nav>
+      <header class='header'>
+          <div class='container-superior'>
+              <div>
+                  <a href='index.html'><img class='logo' src='logo1.png'> </a> 
+                  <h1 class='title'>  La Voz de los mayores</h1>   
+              </div>
+              <nav class='navigation'>
+                  <ul>
+                      <li><a class='pagprinc' href='index.html'>Atrás</a></li>
+                  </ul>
+              </nav>
+              
+          </div>
+      </header>
+      <main class='main'>
+        <div class='container-medio'>
+          <div class='ventana'>
+              <h2 class='form-title'>Se registro correctamente</h2>
+              <div class='block'>
+              </div>
+            
     
-            </div>
-        </header>
-        <main class='main'>
-            <div class='container-medio'>
-                <label>Audiolibro Registrado</label>
-            </div>
-        </main>
+          <div class='botones'>
+              <a href='index.html'><button class='ok'>OK</button></a> 
+    
+          </div>
+    
+    
+      </div>
+      
+                
+        
+    </main>
+      
+    
     </body>
     
     <footer>
-        <div class='container-inferior'>
+      <div class='container-inferior'>
     
-        </div>
-    
+      </div>
+      
     </footer>
     
     </html>";
