@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>La Voz de los mayores</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/estilo_regAudiolibro.css" rel="stylesheet">
+    <link rel="shortcut icon" href="logo1.png">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-superior">
+            <div>
+                <a href="index.html"><img class="logo" src="logo1.png"> </a>
+                <h1 class="title"> La Voz de los mayores</h1>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a class="pagprinc" href="index.html">Atrás</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container-medio">
+            <div class="reg-audiolibro">
+                <form action="RegistroAudiolibro.php" method="post" enctype="multipart/form-data" class="form-disable">
+                    <h2 class="form-title">Registrar Audiolibro</h2>
+                    <div class="block">
+                        <label>Nombre : </label>
+                        <input type="text" maxlength="50" name="name" id="name">
+                    </div>
+                    <div class="block">
+                        <label>Autor : </label>
+                        <input type="text" maxlength="50" name="autor" id="autor">
+                    </div>
+                    <div class="block">
+                        <label>Narrador : </label>
+                        <input type="text" maxlength="50" name="narrador" id="narrador">
+                    </div>
+                    <div class="block">
+                        <label>Género : </label>
+                        <select name="categoria" id="categoria">
+                            <option value="Narrativo">Narrativo</option>x   
+                            <option value="Lirico">Lírico</option>
+                            <option value="Dramatico">Dramático</option>
+                            <option value="Didactico">Didáctico</option>
+                        </select>
+                    </div>
+                    <div class="block">
+                        <label>Audiolibro : </label>
+                        <input class="bot1" type="file" name="archivo" accept=".mp3">
+                    </div>
+
+                    <div class="botones">
+                        <input type="submit" class="registrar" name="registrar" id="registrar" value="Registrar" onclick="disabled, value='Espere por favor...'">
+                        <!--<a href="index.html"><button class="cancelar" type="button">Cancelar</button></a>-->
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+<footer>
+    <div class="container-inferior">
+
+    </div>
+
+</footer>
+
+</html>

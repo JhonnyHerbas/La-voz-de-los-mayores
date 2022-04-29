@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Voz de los mayores</title>
+    <link rel="stylesheet" href="css/Inicio_sesion.css">
+</head>
+<body>
+<div class="general">
+    <header>
+        <div class="container-superior">
+            <div>
+                <a href="index.html"><img class="logo" src="logo1.png"> </a> 
+                <h1 class="title">  La Voz de los mayores</h1>   
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a class="pagprinc" href="index.html">Atrás</a></li>
+                </ul>
+            </nav>   
+        </div>
+
+    </header>
+    <section>
+        <article>
+            <div class="container-izq">
+                <form action="inicio_sesion.php" method="post" class="iniciar-sesion">
+                    <h2 class="form-title">Iniciar Sesion</h2>
+                    <div class="block">
+                         <label class="camp">Usuario : </label>
+                             <input type="text" minlength="4" maxlength="50" name="usuario" required>
+                    </div>
+                     <div class="block">
+                        <label class="camp">Cotraseña : </label>
+                        <input type="password" minlength="8" maxlength="50" name="contrasena" required>
+                    </div>
+                    <div class="boton-ingreso">
+                        <button class="entrar">Entrar</button>
+                    </div>
+                </form>
+            </div>           
+        </article>
+        <main>
+            <div class="container-der">
+                <div class="ir-registro">
+                    <div class="uno">
+                      <p>Aun no tienes una cuenta?</p>
+                    </div>  
+                    <div class="dos">  
+                      <p>Registrate para que puedas </p>
+                    </div>
+                    <div class="tres">  
+                        <p>iniciar sesion</p>
+                      </div>
+                </div>         
+                    <div class="boton">
+                        <a href=""><button class="reg">Registrarse</button></a>
+                    </div>
+            </div>   
+              
+        </main>
+    </section>
+</div>   
+<footer>
+        <div class="container-inferior">
+    
+        </div>
+   
+</footer>
+</body>
+</html>

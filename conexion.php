@@ -12,4 +12,6 @@
     }
     $mysqli = new mysqli("localhost", "root", "", "lavozdelosmayores");
 
+    $mysqli = new mysqli("localhost", "root", "", "lavozdelosmayores");
+
 ?>
