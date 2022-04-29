@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>La Vos de los mayores</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-widtg, initiak-scale=1.0">
 
-  <link href="css/style-regMus.css" rel="stylesheet">
+<head>
+  <title>La Voz de los mayores</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/style-regMus.css" rel="stylesheet" >
   <link rel="shortcut icon" href="logo1.png">
-</head>
+
 <body>
   <header class="header">
-      <div class="container-superior">
-          <div>
-              <a href="index.html"><img class="logo" src="logo1.png"> </a> 
-              <h1 class="title">  La Voz de los mayores</h1>   
-          </div>
-          <nav class="navigation">
-              <ul>
-                  <li><a class="pagprinc" href="index.html">Atrás</a></li>
-              </ul>
-          </nav>
-          
-      </div>
+    <div class="container-superior">
+        <div>
+            <a href="index.html"><img class="logo" src="logo1.png"> </a> 
+            <h1 class="title">  La Voz de los mayores</h1>   
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a class="pagprinc" href="index.html">Atrás</a></li>
+            </ul>
+        </nav>
+        
+    </div>
   </header>
   <main class="main">
     <div class="container-medio">
       <div class="form-register">
+        <form action="SubirMusic.php" method="post" enctype="multipart/form-data">
           <h2 class="form-title">Registrar Musica</h2>
           <div class="block">
             <label>Nombre : </label>
-            <input type="text" maxlength="50">
+            <input name="name" id= "name" type="text" maxlength="50">
            </div>
            <div class="block">
               <label> Artista : </label>
-              <input type="text" maxlength="50">
+              <input name="artista" id="artista" type="text" maxlength="50">
           </div>
           <div class="block">
               <label> Género : </label>
-              <select name="genero">
+              <select name="genero" id = "genero">
                 <option>Rap</option>
                 <option>K-pop</option>
                 <option>Rock</option>
@@ -58,15 +60,17 @@
           </div>
           <div class="block">
               <label>Canción: </label>
-              <input class="bot1" type="file" name="SubirCancion" accept=".mp3">
+              <input class="bot1" name="archivo" id = "archivo" type="file" name="SubirCancion" accept=".mp3">
           </div>
 
       <div class="botones">
-          <a href=""><button class="registrar">Registrar</button></a>
-          <a href="index.html"><button class="cancelar">Cancelar</button></a> 
+          <a href=""><button class="registrar" type="submit" name="registrar">Registrar</button></a>
+          
+          <!--<a href="index.html"><button class="cancelar">Cancelar</button></a> -->
 
       </div>
 
+    </form>
 
   </div>
   
@@ -83,5 +87,4 @@
   </div>
   
 </footer>
-
 </html>
