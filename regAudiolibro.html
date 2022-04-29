@@ -30,7 +30,7 @@
     <main class="main">
         <div class="container-medio">
             <div class="reg-audiolibro">
-                <form action="prueba.php" method="post" enctype="multipart/form-data">
+                <form action="RegistroAudiolibro.php" method="post" enctype="multipart/form-data" class="form-disable">
                     <h2 class="form-title">Registrar Audiolibro</h2>
                     <div class="block">
                         <label>Nombre : </label>
@@ -47,7 +47,7 @@
                     <div class="block">
                         <label>Género : </label>
                         <select name="categoria" id="categoria">
-                            <option value="Narrativo">Narrativo</option>
+                            <option value="Narrativo">Narrativo</option>x   
                             <option value="Lirico">Lírico</option>
                             <option value="Dramatico">Dramático</option>
                             <option value="Didactico">Didáctico</option>
@@ -59,8 +59,8 @@
                     </div>
 
                     <div class="botones">
-                        <a href=""><button class="registrar" type="submit" name="registrar">Registrar</button></a>
-                        <!--<a href="index.html"><button class="cancelar">Cancelar</button></a>-->
+                        <input type="submit" class="registrar" name="registrar" id="registrar" value="Registrar" onclick="disabled, value='Espere por favor...'">
+                        <!--<a href="index.html"><button class="cancelar" type="button">Cancelar</button></a>-->
 
                     </div>
                 </form>
