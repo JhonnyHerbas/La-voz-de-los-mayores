@@ -14,7 +14,56 @@ try{
     $name = $_POST['name'];
     $artista = $_POST['artista'];
     $genero = $_POST['genero'];
-
+//verificar que el nombre no se repita
+            $query_nombre="SELECT * FROM `musica` WHERE NOMBRE_M='$name' and AUTOR_M='$artista' ";
+            $verificar_nombre = mysqli_query($connection,$query_nombre);
+            $row_cont = $verificar_nombre->num_rows;
+            if($row_cont> 0){
+                echo "<!DOCTYPE html>
+    <html lang='en'>
+    
+    <head>
+        <title>La Voz de los mayores</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+        <link href='css/style-regMus.css' rel='stylesheet' >
+        <link rel='shortcut icon' href='logo1.png'>
+    
+    </head>
+    
+    <body>
+        <header class='header'>
+            <div class='container-superior'>
+                <div>
+                    <a href='index.html'><img class='logo' src='logo1.png'> </a>
+                    <h1 class='title'> La Voz de los mayores</h1>
+                </div>
+                <nav class='navigation'>
+                    <ul>
+                        <li><a class='pagprinc' href='index.html'>Atrás</a></li>
+                    </ul>
+                </nav>
+    
+            </div>
+        </header>
+        <main class='main'>
+            <div class='container-medio'>
+                <label>La Musica ya se encuentra registrada, intente subir otra cancion</label>
+            </div>
+        </main>
+    </body>
+    
+    <footer>
+        <div class='container-inferior'>
+    
+        </div>
+    
+    </footer>
+    
+    </html>";
+                exit();
+            }
     $service = new Google_Service_Drive($client);
     $file_path = $_FILES['archivo']['tmp_name'];
 
@@ -42,10 +91,10 @@ try{
     );
 
     $ruta = $result->id;
-
+         
     $sql = "INSERT INTO musica(NOMBRE_M,AUTOR_M,ENLACE_M,CATEGORIA_M,FECHAPUBLICACION_M,TIEMPO_M) VALUES ('$name','$artista','$ruta','$genero',NULL,NULL);";
     $mysqli->query($sql);
-
+            
     echo "<!DOCTYPE html>
     <html lang='en'>
     
