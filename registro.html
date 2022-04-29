@@ -32,12 +32,12 @@
                     <label for="correo" class="correo">Correo:</label><br>
                         <input type="email" id="correo"  class="lol" name="correo" maxlength="100" required><br><br>
                     <label for="contraseña">Contraseña:</label><br>
-                        <input type="password" name="contrasena" id="contraseña"  class="lol" maxlength="20" minlength="8" required><br><br>
+                        <input type="password" name="contrasena" id="contraseña"  class="lol" maxlength="20" minlength="8" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br><br>
                     <label for="con_contra">Confirmar contraseña:</label><br>
-                        <input type="password" name="contrasena2" value="" id="con_contra"  class="lol" maxlength="20" minlength="8" required><br><br>
+                        <input type="password" name="contrasena2" value="" id="con_contra"  class="lol" maxlength="20" minlength="8" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br><br>
                     <div class="container_boton">
                         <button class="confirmar">Confirmar</button>
-                        <button class="cancelar">Cancelar</button>
+                        <button class="cancelar" type="reset">Cancelar</button>
                     </div>
                 </form>
             </div>

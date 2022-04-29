@@ -6,22 +6,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="css/style-regMus.css" rel="stylesheet" >
+  <link href="css/style-regMus.css" rel="stylesheet">
   <link rel="shortcut icon" href="logo1.png">
 
 <body>
   <header class="header">
     <div class="container-superior">
-        <div>
-            <a href="index.html"><img class="logo" src="logo1.png"> </a> 
-            <h1 class="title">  La Voz de los mayores</h1>   
-        </div>
-        <nav class="navigation">
-            <ul>
-                <li><a class="pagprinc" href="index.html">Atrás</a></li>
-            </ul>
-        </nav>
-        
+      <div>
+        <a href="index.html"><img class="logo" src="logo1.png"> </a>
+        <h1 class="title"> La Voz de los mayores</h1>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li><a class="pagprinc" href="index.html">Atrás</a></li>
+        </ul>
+      </nav>
+
     </div>
   </header>
   <main class="main">
@@ -31,53 +31,52 @@
           <h2 class="form-title">Registrar Musica</h2>
           <div class="block">
             <label>Nombre : </label>
-            <input name="name" id= "name" type="text" maxlength="50">
-           </div>
-           <div class="block">
-              <label> Artista : </label>
-              <input name="artista" id="artista" type="text" maxlength="50">
+            <input required name="name" id="name" type="text" maxlength="50">
           </div>
           <div class="block">
-              <label> Género : </label>
-              <select name="genero" id = "genero">
-                <option>Rap</option>
-                <option>K-pop</option>
-                <option>Rock</option>
-                <option>Electronica</option>
-                <option>Pop</option>
-                <option>Clasica</option>
-                <option>Country</option>
-                <option>Metal</option>
-                <option>Folklorica</option>
-                <option>Jazz</option>
-                <option>Salsa</option>
-                <option>Regueton</option>
-                <option>Punk</option>
-                <option>Disco</option>
-                <option>Hip Hop</option>
-                <option>Instrumental</option>
+            <label> Artista : </label>
+            <input required name="artista" id="artista" type="text" maxlength="50">
+          </div>
+          <div class="block">
+            <label> Género : </label>
+            <select name="genero" id="genero">
+              <option>Rap</option>
+              <option>K-pop</option>
+              <option>Rock</option>
+              <option>Electronica</option>
+              <option>Pop</option>
+              <option>Clasica</option>
+              <option>Country</option>
+              <option>Metal</option>
+              <option>Folklorica</option>
+              <option>Jazz</option>
+              <option>Salsa</option>
+              <option>Regueton</option>
+              <option>Punk</option>
+              <option>Disco</option>
+              <option>Hip Hop</option>
+              <option>Instrumental</option>
             </select>
           </div>
           <div class="block">
-              <label>Canción: </label>
-              <input class="bot1" name="archivo" id = "archivo" type="file" name="SubirCancion" accept=".mp3">
+            <label>Canción: </label>
+            <input required class="bot1" name="archivo" id="archivo" type="file" name="SubirCancion" accept=".mp3">
           </div>
 
-      <div class="botones">
-          <a href=""><button class="registrar" type="submit" name="registrar">Registrar</button></a>
-          
-          <!--<a href="index.html"><button class="cancelar">Cancelar</button></a> -->
+          <div class="botones">
+            <a href=""><button class="registrar" type="submit" name="registrar">Registrar</button></a>
+
+            <button class="cancelar" type="reset">Cancelar</button>
+          </div>
+
+        </form>
 
       </div>
 
-    </form>
 
-  </div>
-  
-            
-    
-</main>
-  
+
+  </main>
+
 
 </body>
 
@@ -85,6 +84,7 @@
   <div class="container-inferior">
 
   </div>
-  
+
 </footer>
+
 </html>
