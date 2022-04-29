@@ -94,7 +94,7 @@ try{
 
     $ruta = $result->id;
          
-    $sql = "INSERT INTO musica(NOMBRE_M,AUTOR_M,ENLACE_M,CATEGORIA_M,FECHAPUBLICACION_M,TIEMPO_M) VALUES ('$name','$artista','$ruta','$genero',NULL,NULL);";
+    $sql = "INSERT INTO musica(NOMBRE_M,AUTOR_M,ENLACE_M,CATEGORIA_M) VALUES ('$name','$artista','$ruta','$genero');";
     $mysqli->query($sql);
             
     echo "<!DOCTYPE html>

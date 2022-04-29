@@ -2,7 +2,7 @@
 
     include('conexion.php');
 
-    $query = "select ID_M,NOMBRE_M,AUTOR_M,CATEGORIA_M,FECHAPUBLICACION_M,TIEMPO_M from musica";
+    $query = "select ID_M,NOMBRE_M,AUTOR_M,CATEGORIA_M from musica";
     $result =mysqli_query($connection, $query);
 
     if(!$result){
@@ -15,9 +15,7 @@
             'ID_M' => $row['ID_M'],
             'NOMBRE_M' => $row['NOMBRE_M'],
             'AUTOR_M' => $row['AUTOR_M'],
-            'CATEGORIA_M' => $row['CATEGORIA_M'],
-            'FECHAPUBLICACION_M' => $row['FECHAPUBLICACION_M'],
-            'TIEMPO_M' => $row['TIEMPO_M']
+            'CATEGORIA_M' => $row['CATEGORIA_M']
         );
     }
     $jsonstring = json_encode($json);

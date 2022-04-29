@@ -29,7 +29,6 @@ create table AUDIOLIBRO
    CATEGORIA_AL         varchar(50) not null,
    FECHAPUBLICACION_AL  date not null,
    ENLACE_AL            varchar(150) not null,
-   TIEMPO_AL            varchar(10) not null,
    primary key (ID_AL)
 );
 
@@ -57,8 +56,6 @@ create table MUSICA
    AUTOR_M              varchar(50) not null,
    ENLACE_M             varchar(150) not null,
    CATEGORIA_M          varchar(50) not null,
-   FECHAPUBLICACION_M   date not null,
-   TIEMPO_M             varchar(10) not null,
    primary key (ID_M)
 );
 

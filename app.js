@@ -24,8 +24,6 @@ $(function () {
                                 <td class='nombre'>${musica.NOMBRE_M}</td>
                                 <td class='autor'>${musica.AUTOR_M}</td>
                                 <td class='genero'>${musica.CATEGORIA_M}</td>
-                                <td class='fechaPublicacion'>${musica.FECHAPUBLICACION_M}</td>
-                                <td class='tiempo'>${musica.TIEMPO_M}</td>
                             </tr>
                         </table><br>
                     `
@@ -70,7 +68,7 @@ $(function () {
     const sourceAudio = document.getElementById("music-source")
     function play(id) {
         $.ajax({
-            
+
             url: 'musicaid.php',
             type: 'POST',
             data: { id },
@@ -81,17 +79,17 @@ $(function () {
                 let template2 = '';
                 let template3 = '';
                 enlace.forEach(link => {
-                    sourceAudio.setAttribute('src',`http://docs.google.com/uc?export=open&id=${link.ENLACE_M}`)
-                    
+                    sourceAudio.setAttribute('src', `http://docs.google.com/uc?export=open&id=${link.ENLACE_M}`)
+
                     template2 += `<h1 id="nombreM">${link.NOMBRE_M}</h1>`
                     template3 += `<h3 id="nombreM">${link.AUTOR_M}</h3>`
                 }
                 );
-                
+
                 $('#nombreM').html(template2);
                 $('#nombreA').html(template3);
                 player.load()
-                
+
             }
         })
     }
