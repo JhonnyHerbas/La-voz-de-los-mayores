@@ -4,7 +4,7 @@
 
     $id=$_POST['id'];
 
-    $query = "select ID_M,NOMBRE_M,AUTOR_M,ENLACE_M from musica where ID_M =$id";
+    $query = "select ID_M,NOMBRE_M,AUTOR_M,ENLACE_M from MUSICA where ID_M =$id";
     $result = mysqli_query($connection, $query);
     if(!$result){
         die('Consulta Fallida'. mysqli_error($connection));

@@ -10,12 +10,12 @@
     if(strcmp($contrasena, $confirmar_contrasena) ==0){
         if(validar_clave($contrasena)){
                     
-                $query = "INSERT INTO usuarios(NOMBRE_U, CONTRASENIA_U, CORREO_U) 
+                $query = "INSERT INTO USUARIOS(NOMBRE_U, CONTRASENIA_U, CORREO_U) 
                 VALUES('$nombre_usuario','$contrasena', '$correo')";
         
 
             //verificar que el correo no se repita
-            $query_correo="SELECT * FROM `usuarios` WHERE CORREO_U='$correo' ";
+            $query_correo="SELECT * FROM `USUARIOS` WHERE CORREO_U='$correo' ";
             $verificar_correo = mysqli_query($connection,$query_correo);
             $row_cont = $verificar_correo->num_rows;
             if($row_cont> 0){
@@ -28,7 +28,7 @@
                 exit();
             }
             //verificar que el nombre no se repita
-            $query_usuario="SELECT * FROM `usuarios` WHERE NOMBRE_U='$nombre_usuario' ";
+            $query_usuario="SELECT * FROM `USUARIOS` WHERE NOMBRE_U='$nombre_usuario' ";
             $verificar_usuario = mysqli_query($connection,$query_usuario);
             $row_cont_U = $verificar_usuario->num_rows;
             if($row_cont_U> 0){

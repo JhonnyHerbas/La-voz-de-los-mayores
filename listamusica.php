@@ -2,7 +2,7 @@
 
     include('conexion.php');
 
-    $query = "select ID_M,NOMBRE_M,AUTOR_M,CATEGORIA_M from musica";
+    $query = "select ID_M,NOMBRE_M,AUTOR_M,CATEGORIA_M from MUSICA";
     $result =mysqli_query($connection, $query);
 
     if(!$result){

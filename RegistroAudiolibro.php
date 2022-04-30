@@ -16,7 +16,7 @@ try{
     $narrador = $_POST['narrador'];
     $categoria = $_POST['categoria'];
 
-    $query_nombre="SELECT * FROM `audiolibro` WHERE NOMBRE_AL='$name' and AUTOR_AL='$autor' and NARRADOR_AL='$narrador'";
+    $query_nombre="SELECT * FROM `AUDIOLIBRO` WHERE NOMBRE_AL='$name' and AUTOR_AL='$autor' and NARRADOR_AL='$narrador'";
     $verificar_nombre = mysqli_query($connection,$query_nombre);
     $row_cont = $verificar_nombre->num_rows;
      if($row_cont> 0){
@@ -100,7 +100,7 @@ try{
 
     $ruta = $result->id;
 
-    $sql = "INSERT INTO audiolibro(NOMBRE_AL,AUTOR_AL,NARRADOR_AL,CATEGORIA_AL,FECHAPUBLICACION_AL,ENLACE_AL) VALUES ('$name','$autor','$narrador','$categoria',NOW(),'$ruta');";
+    $sql = "INSERT INTO AUDIOLIBRO(NOMBRE_AL,AUTOR_AL,NARRADOR_AL,CATEGORIA_AL,FECHAPUBLICACION_AL,ENLACE_AL) VALUES ('$name','$autor','$narrador','$categoria',NOW(),'$ruta');";
     $mysqli->query($sql);
 
     echo "<!DOCTYPE html>

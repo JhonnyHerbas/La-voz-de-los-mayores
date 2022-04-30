@@ -17,7 +17,7 @@ try{
 
 //verificar que el nombre no se repita
 
-    $query_nombre="SELECT * FROM `musica` WHERE NOMBRE_M='$name' and AUTOR_M='$artista' ";
+    $query_nombre="SELECT * FROM `MUSICA` WHERE NOMBRE_M='$name' and AUTOR_M='$artista' ";
     $verificar_nombre = mysqli_query($connection,$query_nombre);
     $row_cont = $verificar_nombre->num_rows;
      if($row_cont> 0){
@@ -100,7 +100,7 @@ try{
 
     $ruta = $result->id;
          
-    $sql = "INSERT INTO musica(NOMBRE_M,AUTOR_M,ENLACE_M,CATEGORIA_M) VALUES ('$name','$artista','$ruta','$genero');";
+    $sql = "INSERT INTO MUSICA(NOMBRE_M,AUTOR_M,ENLACE_M,CATEGORIA_M) VALUES ('$name','$artista','$ruta','$genero');";
     $mysqli->query($sql);
             
     echo "<!DOCTYPE html>

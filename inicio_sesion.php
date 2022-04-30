@@ -4,7 +4,7 @@
     $usuario= $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
 
-    $query = "SELECT * FROM usuarios WHERE NOMBRE_U='$usuario' and CONTRASENIA_U='$contrasena' ";
+    $query = "SELECT * FROM USUARIOS WHERE NOMBRE_U='$usuario' and CONTRASENIA_U='$contrasena' ";
     $validar_inicio = mysqli_query($connection , $query);
 
     $row_cont = $validar_inicio->num_rows;
