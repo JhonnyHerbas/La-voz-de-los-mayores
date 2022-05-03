@@ -1,6 +1,6 @@
 <?php
 
-include 'api-google/vendor/autoload.php';
+require_once 'vendor/autoload.php';
 require 'conexion.php';
 
 putenv('GOOGLE_APPLICATION_CREDENTIALS=lavozdelosmayores-a1ece657111a.json');
@@ -74,16 +74,13 @@ try{
             }
     $service = new Google_Service_Drive($client);
     $file_path = $_FILES['archivo']['tmp_name'];
+    var_dump($_FILES);
 
     $file = new Google_Service_Drive_DriveFile();
     $file->setName($_FILES['archivo']['name']);
 
     $finfo = finfo_open(FILEINFO_MIME_TYPE);
-    $mime_type = finfo_file($finfo, $file_path);
-
-    if(strcmp(strval($mime_type), "audio/mpeg")){
-        echo "El archivo no es un audio";
-    }
+    $mime_type = "audio/mpeg";
 
     $file->setParents(array("10fy5pjOMADjXY71BzPfcSUEJtAMrJ4Pr"));
     $file->setDescription("Archivo cargado desde PHP");
