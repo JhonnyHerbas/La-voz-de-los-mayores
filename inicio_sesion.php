@@ -41,7 +41,7 @@
           <main class='main'>
             <div class='container-medio'>
               <div class='ventana'>
-                  <h2 class='form-title'>Por favor verifique los datos introducidos/h2>
+                  <h2 class='form-title'> Por favor verifique los datos introducidos </h2>
                   <div class='block'>
                   </div>
                 

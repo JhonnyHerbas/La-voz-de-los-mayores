@@ -20,7 +20,7 @@
             </div>
             <nav class="navigation">
                 <ul>
-                    <li><a class="pagprinc" href="indexU.html">Atrás</a></li>
+                    <li><a class="pagprinc" href="musicaU.html">Atrás</a></li>
                 </ul>
             </nav>
 
@@ -35,25 +35,28 @@
                     <div class="block">
                         <label>Nombre : </label>
                         <input required type="text" maxlength="50" name="name" id="name"
+                        pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]"
                         required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
                         >
                     </div>
                     <div class="block">
                         <label>Autor : </label>
                         <input required type="text" maxlength="50" name="autor" id="autor"
+                        pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]"
                         required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
                         >
                     </div>
                     <div class="block">
                         <label>Narrador : </label>
                         <input required type="text" maxlength="50" name="narrador" id="narrador"
+                        pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]"
                         required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
                         >
                     </div>
                     <div class="block">
                         <label>Género : </label>
                         <select name="categoria" id="categoria">
-                            <option value="Narrativo">Narrativo</option>x   
+                            <option value="Narrativo">Narrativo</option>   
                             <option value="Lirico">Lírico</option>
                             <option value="Dramatico">Dramático</option>
                             <option value="Didactico">Didáctico</option>

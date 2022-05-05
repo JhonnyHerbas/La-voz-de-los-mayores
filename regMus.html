@@ -18,7 +18,7 @@
       </div>
       <nav class="navigation">
         <ul>
-          <li><a class="pagprinc" href="indexU.html">Atrás</a></li>
+          <li><a class="pagprinc" href="musicaU.html">Atrás</a></li>
         </ul>
       </nav>
 
@@ -32,13 +32,15 @@
           <div class="block">
             <label>Nombre : </label>
             <input required name="name" id="name" type="text" maxlength="50"
+            pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]"
             required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
             >
 
           </div>
           <div class="block">
             <label> Artista : </label>
-            <input required name="artista" id="artista" type="text" maxlength="50"
+            <input required name="artista" id="artista" type="text" maxlength="50" 
+            pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]"
             required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
             >
           </div>
