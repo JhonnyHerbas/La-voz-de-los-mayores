@@ -15,16 +15,19 @@ try{
     $artista = $_POST['artista'];
     $genero = $_POST['genero'];
 
+    $name1 = str_replace("'", "’", $name);
+    $artista1 = str_replace("'", "’", $artista);
+
 //verificar que el nombre no se repita
 
-    $query_nombre="SELECT * FROM `MUSICA` WHERE NOMBRE_M='$name' and AUTOR_M='$artista' ";
+    $query_nombre="SELECT * FROM `MUSICA` WHERE NOMBRE_M='$name1' and AUTOR_M='$artista1' ";
     $verificar_nombre = mysqli_query($connection,$query_nombre);
     $row_cont = $verificar_nombre->num_rows;
      if($row_cont> 0){
          echo "<!DOCTYPE html>
          <html lang='en'>
          <head>
-           <title>La Voz de los mayores</title>
+           <title>Registrar Musica</title>
            <meta charset='UTF-8'>
            <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
          
@@ -85,7 +88,7 @@ try{
         echo "<!DOCTYPE html>
         <html lang='en'>
         <head>
-          <title>La Voz de los mayores</title>
+          <title>Registrar Musica</title>
           <meta charset='UTF-8'>
           <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
         
@@ -96,12 +99,12 @@ try{
           <header class='header'>
               <div class='container-superior'>
                   <div>
-                      <a href='index.html'><img class='logo' src='logo1.png'> </a> 
+                      <a href='indexU.html'><img class='logo' src='logo1.png'> </a> 
                       <h1 class='title'>  La voz de los mayores</h1>   
                   </div>
                   <nav class='navigation'>
                       <ul>
-                          <li><a class='pagprinc' href='indexU.html'>Atrás</a></li>
+                          <li><a class='pagprinc' href='musicaU.html'>Atrás</a></li>
                       </ul>
                   </nav>
                   
@@ -148,13 +151,13 @@ try{
 
     $ruta = $result->id;
          
-    $sql = "INSERT INTO MUSICA(NOMBRE_M,AUTOR_M,ENLACE_M,CATEGORIA_M) VALUES ('$name','$artista','$ruta','$genero');";
+    $sql = "INSERT INTO MUSICA(NOMBRE_M,AUTOR_M,ENLACE_M,CATEGORIA_M) VALUES ('$name1','$artista1','$ruta','$genero');";
     $mysqli->query($sql);
             
     echo "<!DOCTYPE html>
     <html lang='en'>
     <head>
-      <title>La Voz de los mayores</title>
+      <title>Registrar Musica</title>
       <meta charset='UTF-8'>
       <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
     
@@ -170,7 +173,7 @@ try{
               </div>
               <nav class='navigation'>
                   <ul>
-                      <li><a class='pagprinc' href='indexU.html'>Atrás</a></li>
+                      <li><a class='pagprinc' href='musicaU.html'>Atrás</a></li>
                   </ul>
               </nav>
               

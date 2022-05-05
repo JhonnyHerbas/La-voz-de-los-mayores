@@ -16,14 +16,18 @@ try{
     $narrador = $_POST['narrador'];
     $categoria = $_POST['categoria'];
 
-    $query_nombre="SELECT * FROM `AUDIOLIBRO` WHERE NOMBRE_AL='$name' and AUTOR_AL='$autor' and NARRADOR_AL='$narrador'";
+    $name1 = str_replace("'", "’", $name);
+    $autor1 = str_replace("'", "’", $autor);
+    $narrador1 = str_replace("'", "’", $narrador);
+
+    $query_nombre="SELECT * FROM `AUDIOLIBRO` WHERE NOMBRE_AL='$name1' and AUTOR_AL='$autor1' and NARRADOR_AL='$narrador1'";
     $verificar_nombre = mysqli_query($connection,$query_nombre);
     $row_cont = $verificar_nombre->num_rows;
      if($row_cont> 0){
          echo "<!DOCTYPE html>
          <html lang='en'>
          <head>
-           <title>La Voz de los mayores</title>
+           <title>Registrar Audiolibro</title>
            <meta charset='UTF-8'>
            <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
          
@@ -84,7 +88,7 @@ try{
         echo "<!DOCTYPE html>
         <html lang='en'>
         <head>
-          <title>La Voz de los mayores</title>
+          <title>Registrar Audiolibro</title>
           <meta charset='UTF-8'>
           <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
         
@@ -100,7 +104,7 @@ try{
                   </div>
                   <nav class='navigation'>
                       <ul>
-                          <li><a class='pagprinc' href='indexU.html'>Atrás</a></li>
+                          <li><a class='pagprinc' href='musicaU.html'>Atrás</a></li>
                       </ul>
                   </nav>
                   
@@ -148,13 +152,13 @@ try{
 
     $ruta = $result->id;
 
-    $sql = "INSERT INTO AUDIOLIBRO(NOMBRE_AL,AUTOR_AL,NARRADOR_AL,CATEGORIA_AL,FECHAPUBLICACION_AL,ENLACE_AL) VALUES ('$name','$autor','$narrador','$categoria',NOW(),'$ruta');";
+    $sql = "INSERT INTO AUDIOLIBRO(NOMBRE_AL,AUTOR_AL,NARRADOR_AL,CATEGORIA_AL,FECHAPUBLICACION_AL,ENLACE_AL) VALUES ('$name1','$autor1','$narrador1','$categoria',NOW(),'$ruta');";
     $mysqli->query($sql);
 
     echo "<!DOCTYPE html>
     <html lang='en'>
     <head>
-      <title>La Voz de los mayores</title>
+      <title>Registrar Audiolibro</title>
       <meta charset='UTF-8'>
       <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
     
@@ -170,7 +174,7 @@ try{
               </div>
               <nav class='navigation'>
                   <ul>
-                      <li><a class='pagprinc' href='indexU.html'>Atrás</a></li>
+                      <li><a class='pagprinc' href='musicaU.html'>Atrás</a></li>
                   </ul>
               </nav>
               
@@ -185,7 +189,7 @@ try{
             
     
           <div class='botones'>
-              <a href='indexU.html'><button class='ok'>OK</button></a> 
+              <a href='musicaU.html'><button class='ok'>OK</button></a> 
     
           </div>
     
