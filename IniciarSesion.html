@@ -4,71 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Voz de los mayores</title>
-    <link rel="stylesheet" href="css/Inicio_sesion.css">
+    <title>Inicio Sesion</title>
     <link rel="shortcut icon" href="logo1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/Inicio_sesion.css">
 </head>
 <body>
-<div class="general">
-    <header>
-        <div class="container-superior">
-            <div>
-                <a href="index.html"><img class="logo" src="logo1.png"> </a> 
-                <h1 class="title">  La Voz de los mayores</h1>   
+    <div class="conatiner_todo">
+        <header class="general">
+            <div class="container-Msuperior">
+                <a href="index.html"><img class="logo" src="logo1.png"></a>
+                <h1 class="title">La Voz de los mayores</h1>
             </div>
-            <nav class="navigation">
-                <ul>
-                    <li><a class="pagprinc" href="index.html">Atrás</a></li>
-                </ul>
-            </nav>   
+            <div class="atras">
+                <a href="index2.html"><button class="Atras" type="submit" name="Atras">Atrás</button></a>
+            </div> 
+        </header>
+        <div class="container_medio">
+            <!--Lado del formulario-->
+            <div class="lado_izquierda">
+                <!--Contenedor del formulario-->
+                <div class="form">
+                    <form action="inicio_sesion.php" method="post">
+                        <!--Titulo-->
+                        <div class="titulo">
+                            <h2 class="iniciar_session">Iniciar Sesión</h2>
+                        </div><br>
+                        <!--Usuario-->
+                        <div class="block">
+                            <label for="usuario" class="name">Usuario</label><br>
+                            <input type="text" id="usuario" class="lol" name="usuario" maxlength="50"
+                             minlength="4" autocomplete="off" 
+                              required onkeyup="this.value=this.value.replace(/^\s+/,'');">
+                            <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
+                            <span class="msj"></span>
+                        </div>
+                        <!--Contraseña-->
+                        <div class="block">
+                            <label for="contraseña">Contraseña</label><br>
+                            <input type="password" name="contrasena" id="contraseña"  class="lol" maxlength="20" 
+                            minlength="8" required onkeyup="this.value=this.value.replace(/^\s+/,'');">
+                            <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
+                            <span class="msj"></span>
+                        </div>
+                        <!--BOTONES CONFIRMAR Y ACEPTAR-->                 
+                        <div class="botones">
+                            <button class="entrar" type="submit" id="entrar" name="entrar">Entrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--Lado del mensaje de registro-->
+            <div class="lado_derecho">
+                <div class="contenedor_mensaje">
+                    <!--Div vacion-->
+                    <div class="espacio">
+                    
+                    </div>
+                    <!--No tienes ceunta-->
+                    <div class="primera">
+                        <label > ¿Aún no tienes una cuenta? </label>
+                    </div>
+                    <!--Registrate-->
+                    <div class="primera">
+                        <label > Regístrate para iniciar sesión </label>
+                    </div>
+                    <!--Registrate-->
+                    <div class="botones2">
+                       <a href="registro.html"><button class="registrar">Regístrarse</button></a>                      
+                    </div>
+                    <!--Div vacion-->
+                    <div class="espacio">
+                    
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </header>
-    <section>
-        <article>
-            <div class="container-izq">
-                <form action="inicio_sesion.php" method="post" class="iniciar-sesion">
-                    <h2 class="form-title">Iniciar Sesion</h2>
-                    <div class="block">
-                         <label class="camp">Usuario : </label>
-                             <input type="text" minlength="4" maxlength="50" name="usuario" required>
-                    </div>
-                     <div class="block">
-                        <label class="camp">Cotraseña : </label>
-                        <input type="password" minlength="8" maxlength="50" name="contrasena" required>
-                    </div>
-                    <div class="boton-ingreso">
-                        <button class="entrar">Entrar</button>
-                    </div>
-                </form>
-            </div>           
-        </article>
-        <main>
-            <div class="container-der">
-                <div class="ir-registro">
-                    <div class="uno">
-                      <p>Aun no tienes una cuenta?</p>
-                    </div>  
-                    <div class="dos">  
-                      <p>Registrate para que puedas </p>
-                    </div>
-                    <div class="tres">  
-                        <p>Iniciar sesion</p>
-                      </div>
-                </div>         
-                    <div class="boton">
-                        <a href="registro.html"><button class="reg" type="button">Registrarse</button></a>
-                    </div>
-            </div>   
-              
-        </main>
-    </section>
-</div>   
-<footer>
+    </div>
+    <footer>
         <div class="container-inferior">
     
-        </div>
-   
-</footer>
-</body>
+        </div>    
+    </footer>
 </html>
