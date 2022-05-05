@@ -44,57 +44,12 @@
             $ejecutar = mysqli_query($connection,$query);
 
             if($ejecutar){
-                echo "<!DOCTYPE html>
-        <html lang='en'>
-        <head>
-          <title>La Voz de los mayores</title>
-          <meta charset='UTF-8'>
-          <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
-        
-          <link href='css/style-ventana.css' rel='stylesheet'>
-          <link rel='shortcut icon' href='logo1.png'>
-        </head>
-        <body>
-          <header class='header'>
-              <div class='container-superior'>
-                  <div>
-                      <a href='index.html'><img class='logo' src='logo1.png'> </a> 
-                      <h1 class='title'>  La voz de los mayores</h1>   
-                  </div>
-                  <nav class='navigation'>
-                      <ul>
-                          <li><a class='pagprinc' href='index.html'>Atrás</a></li>
-                      </ul>
-                  </nav>
-                  
-              </div>
-          </header>
-          <main class='main'>
-            <div class='container-medio'>
-              <div class='ventana'>
-                  <h2 class='form-title'>Usuario registrado exitosamente</h2>
-                  <div class='block'>
-                  </div>
-                
-        
-              <div class='botones'>
-                  <a href='regMus.html'><button class='ok'>OK</button></a> 
-        
-              </div>
-          </div>        
-        </main>
-   </body>
-   
-   <footer>
-       <div class='container-inferior'>
-   
-       </div>
-   
-   </footer>
-   
-   </html>"; 
-               exit();
-            }
+                echo '
+                    <script>
+                        alert("Usuario creado exitosamente");
+                        window.location = "index.html";
+                    </script>
+                ';
             }else{
                 echo '
                     <script>

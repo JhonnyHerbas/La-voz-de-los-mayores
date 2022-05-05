@@ -34,12 +34,12 @@ try{
            <header class='header'>
                <div class='container-superior'>
                    <div>
-                       <a href='index.html'><img class='logo' src='logo1.png'> </a> 
+                       <a href='indexU.html'><img class='logo' src='logo1.png'> </a> 
                        <h1 class='title'>  La voz de los mayores</h1>   
                    </div>
                    <nav class='navigation'>
                        <ul>
-                           <li><a class='pagprinc' href='index.html'>Atrás</a></li>
+                           <li><a class='pagprinc' href='indexU.html'>Atrás</a></li>
                        </ul>
                    </nav>
                    
@@ -95,12 +95,12 @@ try{
           <header class='header'>
               <div class='container-superior'>
                   <div>
-                      <a href='index.html'><img class='logo' src='logo1.png'> </a> 
+                      <a href='indexU.html'><img class='logo' src='logo1.png'> </a> 
                       <h1 class='title'>  La voz de los mayores</h1>   
                   </div>
                   <nav class='navigation'>
                       <ul>
-                          <li><a class='pagprinc' href='index.html'>Atrás</a></li>
+                          <li><a class='pagprinc' href='indexU.html'>Atrás</a></li>
                       </ul>
                   </nav>
                   
@@ -109,13 +109,13 @@ try{
           <main class='main'>
             <div class='container-medio'>
               <div class='ventana'>
-                  <h2 class='form-title'>La canción no esta en formato mp3, intente con otra</h2>
+                  <h2 class='form-title'>El audio libro no esta en formato mp3, intente con otro</h2>
                   <div class='block'>
                   </div>
                 
         
               <div class='botones'>
-                  <a href='regMus.html'><button class='ok'>OK</button></a> 
+                  <a href='regAudiolibro.html'><button class='ok'>OK</button></a> 
         
               </div>
           </div>        
@@ -165,12 +165,12 @@ try{
       <header class='header'>
           <div class='container-superior'>
               <div>
-                  <a href='index.html'><img class='logo' src='logo1.png'> </a> 
+                  <a href='indexU.html'><img class='logo' src='logo1.png'> </a> 
                   <h1 class='title'>  La Voz de los mayores</h1>   
               </div>
               <nav class='navigation'>
                   <ul>
-                      <li><a class='pagprinc' href='index.html'>Atrás</a></li>
+                      <li><a class='pagprinc' href='indexU.html'>Atrás</a></li>
                   </ul>
               </nav>
               
@@ -185,7 +185,7 @@ try{
             
     
           <div class='botones'>
-              <a href='index.html'><button class='ok'>OK</button></a> 
+              <a href='indexU.html'><button class='ok'>OK</button></a> 
     
           </div>
     

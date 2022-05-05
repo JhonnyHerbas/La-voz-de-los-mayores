@@ -35,12 +35,12 @@ try{
            <header class='header'>
                <div class='container-superior'>
                    <div>
-                       <a href='index.html'><img class='logo' src='logo1.png'> </a> 
+                       <a href='indexU.html'><img class='logo' src='logo1.png'> </a> 
                        <h1 class='title'>  La voz de los mayores</h1>   
                    </div>
                    <nav class='navigation'>
                        <ul>
-                           <li><a class='pagprinc' href='index.html'>Atrás</a></li>
+                           <li><a class='pagprinc' href='indexU.html'>Atrás</a></li>
                        </ul>
                    </nav>
                    
@@ -101,7 +101,7 @@ try{
                   </div>
                   <nav class='navigation'>
                       <ul>
-                          <li><a class='pagprinc' href='index.html'>Atrás</a></li>
+                          <li><a class='pagprinc' href='indexU.html'>Atrás</a></li>
                       </ul>
                   </nav>
                   
@@ -165,12 +165,12 @@ try{
       <header class='header'>
           <div class='container-superior'>
               <div>
-                  <a href='index.html'><img class='logo' src='logo1.png'> </a> 
+                  <a href='indexU.html'><img class='logo' src='logo1.png'> </a> 
                   <h1 class='title'>  La voz de los mayores</h1>   
               </div>
               <nav class='navigation'>
                   <ul>
-                      <li><a class='pagprinc' href='index.html'>Atrás</a></li>
+                      <li><a class='pagprinc' href='indexU.html'>Atrás</a></li>
                   </ul>
               </nav>
               
@@ -185,7 +185,7 @@ try{
             
     
           <div class='botones'>
-              <a href='musica.html'><button class='ok'>OK</button></a> 
+              <a href='musicaU.html'><button class='ok'>OK</button></a> 
     
           </div>
     
