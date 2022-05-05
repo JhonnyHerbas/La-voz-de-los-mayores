@@ -36,7 +36,7 @@ try{
                <div class='container-superior'>
                    <div>
                        <a href='index.html'><img class='logo' src='logo1.png'> </a> 
-                       <h1 class='title'>  La Voz de los mayores</h1>   
+                       <h1 class='title'>  La voz de los mayores</h1>   
                    </div>
                    <nav class='navigation'>
                        <ul>
@@ -80,8 +80,59 @@ try{
     $file->setName($_FILES['archivo']['name']);
 
     $finfo = finfo_open(FILEINFO_MIME_TYPE);
-    $mime_type = "audio/mpeg";
-
+    $mime_type = finfo_file($finfo, $file_path);
+    if(strcmp(strval($mime_type), "audio/mpeg")){
+        echo "<!DOCTYPE html>
+        <html lang='en'>
+        <head>
+          <title>La Voz de los mayores</title>
+          <meta charset='UTF-8'>
+          <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
+        
+          <link href='css/style-ventana.css' rel='stylesheet'>
+          <link rel='shortcut icon' href='logo1.png'>
+        </head>
+        <body>
+          <header class='header'>
+              <div class='container-superior'>
+                  <div>
+                      <a href='index.html'><img class='logo' src='logo1.png'> </a> 
+                      <h1 class='title'>  La voz de los mayores</h1>   
+                  </div>
+                  <nav class='navigation'>
+                      <ul>
+                          <li><a class='pagprinc' href='index.html'>Atrás</a></li>
+                      </ul>
+                  </nav>
+                  
+              </div>
+          </header>
+          <main class='main'>
+            <div class='container-medio'>
+              <div class='ventana'>
+                  <h2 class='form-title'>La canción no esta en formato mp3, intente con otra</h2>
+                  <div class='block'>
+                  </div>
+                
+        
+              <div class='botones'>
+                  <a href='regMus.html'><button class='ok'>OK</button></a> 
+        
+              </div>
+          </div>        
+        </main>
+   </body>
+   
+   <footer>
+       <div class='container-inferior'>
+   
+       </div>
+   
+   </footer>
+   
+   </html>"; 
+               exit();
+            }
     $file->setParents(array("10fy5pjOMADjXY71BzPfcSUEJtAMrJ4Pr"));
     $file->setDescription("Archivo cargado desde PHP");
     $file->setMimeType($mime_type);
@@ -115,7 +166,7 @@ try{
           <div class='container-superior'>
               <div>
                   <a href='index.html'><img class='logo' src='logo1.png'> </a> 
-                  <h1 class='title'>  La Voz de los mayores</h1>   
+                  <h1 class='title'>  La voz de los mayores</h1>   
               </div>
               <nav class='navigation'>
                   <ul>
