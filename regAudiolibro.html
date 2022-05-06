@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>La Voz de los mayores</title>
+    <title>Registrar Audiolibro</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,12 +15,12 @@
     <header class="header">
         <div class="container-superior">
             <div>
-                <a href="index.html"><img class="logo" src="logo1.png"> </a>
+                <a href="indexU.html"><img class="logo" src="logo1.png"> </a>
                 <h1 class="title"> La Voz de los mayores</h1>
             </div>
             <nav class="navigation">
                 <ul>
-                    <li><a class="pagprinc" href="index.html">Atrás</a></li>
+                    <li><a class="pagprinc" href="musicaU.html">Atrás</a></li>
                 </ul>
             </nav>
 
@@ -34,20 +34,26 @@
                     <h2 class="form-title">Registrar Audiolibro</h2>
                     <div class="block">
                         <label>Nombre : </label>
-                        <input required type="text" maxlength="50" name="name" id="name">
+                        <input required type="text" maxlength="50" name="name" id="name"
+                        required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
+                        >
                     </div>
                     <div class="block">
                         <label>Autor : </label>
-                        <input required type="text" maxlength="50" name="autor" id="autor">
+                        <input required type="text" maxlength="50" name="autor" id="autor"
+                        required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
+                        >
                     </div>
                     <div class="block">
                         <label>Narrador : </label>
-                        <input required type="text" maxlength="50" name="narrador" id="narrador">
+                        <input required type="text" maxlength="50" name="narrador" id="narrador"
+                        required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
+                        >
                     </div>
                     <div class="block">
                         <label>Género : </label>
                         <select name="categoria" id="categoria">
-                            <option value="Narrativo">Narrativo</option>x   
+                            <option value="Narrativo">Narrativo</option>   
                             <option value="Lirico">Lírico</option>
                             <option value="Dramatico">Dramático</option>
                             <option value="Didactico">Didáctico</option>
@@ -55,11 +61,11 @@
                     </div>
                     <div class="block">
                         <label>Audiolibro : </label>
-                        <input required class="bot1" type="file" name="archivo" accept=".mp3">
+                        <input required class="bot1" type="file" name="archivo" id="archivo"  accept=".mp3">
                     </div>
 
                     <div class="botones">
-                        <button type="submit" class="registrar" name="registrar" id="registrar">Registrar</button>
+                        <button type="submit" class="registrar" name="registrar" id="registrar" disabled >Registrar</button>
                         <button class="cancelar" type="reset">Cancelar</button></a>
 
                     </div>
@@ -68,7 +74,7 @@
         </div>
 
     </main>
-
+    <script src="btnA.js"></script>
 </body>
 
 <footer>

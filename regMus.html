@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>La Voz de los mayores</title>
+  <title>Registrar Musica</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,12 +13,12 @@
   <header class="header">
     <div class="container-superior">
       <div>
-        <a href="index.html"><img class="logo" src="logo1.png"> </a>
+        <a href="indexU.html"><img class="logo" src="logo1.png"> </a>
         <h1 class="title"> La Voz de los mayores</h1>
       </div>
       <nav class="navigation">
         <ul>
-          <li><a class="pagprinc" href="index.html">Atrás</a></li>
+          <li><a class="pagprinc" href="musicaU.html">Atrás</a></li>
         </ul>
       </nav>
 
@@ -31,11 +31,16 @@
           <h2 class="form-title">Registrar Musica</h2>
           <div class="block">
             <label>Nombre : </label>
-            <input required name="name" id="name" type="text" maxlength="50">
+            <input required name="name" id="name" type="text" maxlength="50" 
+            required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
+            >
+
           </div>
           <div class="block">
             <label> Artista : </label>
-            <input required name="artista" id="artista" type="text" maxlength="50">
+            <input required name="artista" id="artista" type="text" maxlength="50" 
+            required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
+            >
           </div>
           <div class="block">
             <label> Género : </label>
@@ -43,7 +48,7 @@
               <option>Rap</option>
               <option>K-pop</option>
               <option>Rock</option>
-              <option>Electronica</option>
+              <option>Electrónica</option>
               <option>Pop</option>
               <option>Clasica</option>
               <option>Country</option>
@@ -64,8 +69,8 @@
           </div>
 
           <div class="botones">
-            <a href=""><button class="registrar" type="submit" name="registrar">Registrar</button></a>
-
+            <a href=""><button id="btn" class="registrar" type="submit" name="registrar" disabled >Registrar</button></a>
+            
             <button class="cancelar" type="reset">Cancelar</button>
           </div>
 
@@ -73,11 +78,11 @@
 
       </div>
 
-
+  
 
   </main>
 
-
+  <script src="btn.js"></script>
 </body>
 
 <footer>
