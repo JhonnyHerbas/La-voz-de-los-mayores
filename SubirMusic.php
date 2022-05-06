@@ -77,7 +77,7 @@ try{
             }
     $service = new Google_Service_Drive($client);
     $file_path = $_FILES['archivo']['tmp_name'];
-    var_dump($_FILES);
+    //var_dump($_FILES);
 
     $file = new Google_Service_Drive_DriveFile();
     $file->setName($_FILES['archivo']['name']);
