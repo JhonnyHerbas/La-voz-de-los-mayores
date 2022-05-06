@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registrar Audiolibro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/estilo_regAudiolibro.css" rel="stylesheet">
+    <link rel="shortcut icon" href="logo1.png">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-superior">
+            <div>
+                <a href="indexU.html"><img class="logo" src="logo1.png"> </a>
+                <h1 class="title"> La Voz de los mayores</h1>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a class="pagprinc" href="musicaU.html">Atrás</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container-medio">
+            <div class="reg-audiolibro">
+                <form action="RegistroAudiolibro.php" method="post" enctype="multipart/form-data" class="form-disable">
+                    <h2 class="form-title">Registrar Audiolibro</h2>
+                    <div class="block">
+                        <label>Nombre : </label>
+                        <input required type="text" maxlength="50" name="name" id="name"
+                        required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
+                        >
+                    </div>
+                    <div class="block">
+                        <label>Autor : </label>
+                        <input required type="text" maxlength="50" name="autor" id="autor"
+                        required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
+                        >
+                    </div>
+                    <div class="block">
+                        <label>Narrador : </label>
+                        <input required type="text" maxlength="50" name="narrador" id="narrador"
+                        required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
+                        >
+                    </div>
+                    <div class="block">
+                        <label>Género : </label>
+                        <select name="categoria" id="categoria">
+                            <option value="Narrativo">Narrativo</option>   
+                            <option value="Lirico">Lírico</option>
+                            <option value="Dramatico">Dramático</option>
+                            <option value="Didactico">Didáctico</option>
+                        </select>
+                    </div>
+                    <div class="block">
+                        <label>Audiolibro : </label>
+                        <input required class="bot1" type="file" name="archivo" id="archivo"  accept=".mp3">
+                    </div>
+
+                    <div class="botones">
+                        <button type="submit" class="registrar" name="registrar" id="registrar" disabled >Registrar</button>
+                        <button class="cancelar" type="reset">Cancelar</button></a>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <script src="btnA.js"></script>
+</body>
+
+<footer>
+    <div class="container-inferior">
+
+    </div>
+
+</footer>
+
+</html>

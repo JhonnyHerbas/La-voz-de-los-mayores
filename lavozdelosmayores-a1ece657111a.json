@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "lavozdelosmayores",
+  "private_key_id": "a1ece657111a03ff758e4f898bd9f3a29f43ddb0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDRzE85Walr3Aq4\naZY+7NKoZguHE3fb7o6FJHxMBABCfcoyKlCrwfnBx6w7sUeGNcdaqkwwrS+xWEeI\nBfoRSJlB0Xc6V9yIBj/n3FoSCHTtkbsSDQ3tjApFte6G21B6ewBH4PZzSbhRg8hW\n9MHeSArpadW/O2Ps9dYb5KaAeG99GKvEPVsrmThTNAc0ghgwA6tHAU/nncQJSSbW\nzbd/oETeaMWCplbl/VQGQxxoBUBwm9qudpXZbTHSfkkzVOlpCTqSED9PCItp6/ZT\nW1FUQTf++XDQk4fnSItAP5vjkjTHqSLN8k+UC6M1Z0xNxwJvRYW2xFldJrbV+fkd\nrDI+hRlvAgMBAAECggEAP6f7Pc57vnNUeWHoKY2X2WqlAsYgbwXyDmnkoPfx0Dr0\nl8YJFiRUELzyAGao6gr1Qwg69+YEe43qnlYZ6xaZEcRppbU0/7zNtR9B4QjZ2Z+H\nIFH/sNz13PL3vclboN4jVqvme1KZ73nJ1sCK9lPro6juJwjxJ9vrrCjzcDWatlyx\n3uU1VnVAOBlBgWR6RXjDgIxX9ZoTRSV1Iw7n36/6JNGgXHDh4jTz3G/+Rb+o9J/p\nEwgkJEsq5sUENWACikKqot1sMueLadebGFPHCIvey8btIRyOsOVR7YbGqMQY6ots\nqcWIPlClB67ipcsYdcusoHZfhZ5tDohYpO7ZPc3OqQKBgQD7b2AMNtN8vbX/VyTj\nwRzAkL15Byij/4meiURiPOuv/m2ZOUS2UDvux/hCqTGfZkH8/FDot6BBY3l+ZWKE\n39NZj6riCeDFo7hpOe+eZ0LJbYMXx6PXxOcpu56KITbWAOUfBlt/sw1udK5/vzDY\nEIoJGM8Jyw8pgtzoJtjSmVkPJQKBgQDVm2nC06CH7coEsHj6eZmR7b28qn05fLd7\nhnO0n6uwEUdb8gcoRqwjvDpc2E4kYKkE9mBxqUuxwDdclbxtB4POhz4FPwfXQ9oD\nXGfoyVjQ55E+KpSER4944uwfX3mDLQhVpJ7o20Crk2tU74gDgThcAV8Yzf7Z2TD6\n6EjYy1R8AwKBgQCKnDal5R+n1+naLw9eI1qXafOaIfEsn7YdWO0C/zSrHCcNXj3c\nB9VSaJkbHq0Fg9kC/5IXCQvmoFEc9gVe3QlliUcaP3nTWtNR5yeK+sAdzSqE1IEl\ndR4+qnjXC0JwraOh+947Qtk3uElukVb69fsy0qNocbIVH1hq/udvCizHpQKBgQCf\nlxGZYguaAurgPgjk+lzmTj1n6+jLPobHX1irJnBbh01NQLJgQQzzVfo0y9b2DtG4\nx2qfAOFw2C+EmMrCms67SwfnW4Q8LJGB2VQ489XLnndBfwafHefvZXsMpYRfoRGN\nCwU+7DCQ//884gk4tR6qfsvR+HXjxQV3MHzcnG1uiQKBgF+ZICFPx7p6AIZmAWL1\nBgwcmX9ETp4oAwOH8WVEACxj12y0+yMToRGub2v/kqG2/QNFwFxf8hmgoDKW4PnY\nTfyY81TsYo9LeYV0fiuTZLaQs8PIvaUiQc/WD4dQBvXM3mBbfIX4c+zs7VJ/re3m\nWmpaar6BUDcytceO8Hp3koAc\n-----END PRIVATE KEY-----\n",
+  "client_email": "cargas@lavozdelosmayores.iam.gserviceaccount.com",
+  "client_id": "115227132689993886280",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cargas%40lavozdelosmayores.iam.gserviceaccount.com"
+}
