@@ -4,6 +4,15 @@ function habilitar1(){
     text_3 = document.getElementById("narrador").value;
     text_4 = document.getElementById("categoria").value;
     text_5 = document.getElementById("archivo").value;
+    const archivos = this.files;
+    if(archivos){
+        for(let i=0; i<archivos.length; i++){
+            const archivo = archivos.item(i)
+            if(!archivo.name.match(/.mp3$/i)||archivo.type != 'audio/mpeg'){
+                alert('Formato incorrecto, seleccione un archivo mp3')
+            }
+        }
+    }
     val = 0;
 
     if(text_1 == ""){
