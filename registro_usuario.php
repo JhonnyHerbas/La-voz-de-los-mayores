@@ -2,94 +2,273 @@
 
     include('conexion.php');
 
-    $nombre_usuario= $_POST['nombre'];
-    $correo = $_POST['correo'];
-    $contrasena = $_POST['contrasena'];
-    $confirmar_contrasena = $_POST['contrasena2'];
+    $query5 = "select NOMBRE_U from USUARIOS WHERE NOMBRE_U='Local'";
+    $result =mysqli_query($connection, $query5);
 
+    if(!$result){
+        die('Consulta Fallida'. mysqli_error($connection));
+    }
+    $json = array();
+    while($row=mysqli_fetch_array($result)){
+    $json[] = array(
+    'NOMBRE_U' => $row['NOMBRE_U']);
+    }
+    $jsonstring = json_encode($json);
+
+    $nombre_usuario1= $_POST['nombre'];
+    $correo1 = $_POST['correo'];
+    $contrasena1 = $_POST['contrasena'];
+    $confirmar_contrasena1= $_POST['contrasena2'];
+    
+    $nombre_usuario=str_replace("'", "`", $nombre_usuario1);
+    $correo=str_replace("'", "`", $correo1);
+    $contrasena=str_replace("'", "`", $contrasena1);
+    $confirmar_contrasena=str_replace("'", "`", $confirmar_contrasena1);
+//Confirmar contraseña
     if(strcmp($contrasena, $confirmar_contrasena) ==0){
-        if(validar_clave($contrasena)){
-                    
-                $query = "INSERT INTO USUARIOS(NOMBRE_U, CONTRASENIA_U, CORREO_U) 
-                VALUES('$nombre_usuario','$contrasena', '$correo')";
-        
-
-            //verificar que el correo no se repita
-            $query_correo="SELECT * FROM `USUARIOS` WHERE CORREO_U='$correo' ";
-            $verificar_correo = mysqli_query($connection,$query_correo);
-            $row_cont = $verificar_correo->num_rows;
-            if($row_cont> 0){
-                echo '
-                    <script>
-                        alert("Este correo ya fue registrado, intente con otro correo");
-                        window.location = "registro.html";
-                    </script>
-                ';
-                exit();
-            }
-            //verificar que el nombre no se repita
-            $query_usuario="SELECT * FROM `USUARIOS` WHERE NOMBRE_U='$nombre_usuario' ";
-            $verificar_usuario = mysqli_query($connection,$query_usuario);
-            $row_cont_U = $verificar_usuario->num_rows;
-            if($row_cont_U> 0){
-                echo '
-                    <script>
-                        alert("Este usuario ya fue registrado, intente con otro usuario");
-                        window.location = "registro.html";
-                    </script>
-                ';
-                exit();
-            }
+        $query = "INSERT INTO USUARIOS(NOMBRE_U, CONTRASENIA_U, CORREO_U) 
+        VALUES('$nombre_usuario','$contrasena', '$correo')"; 
+        //verificar que el correo no se repita
+        $query_correo="SELECT * FROM `USUARIOS` WHERE CORREO_U='$correo' ";
+        $verificar_correo = mysqli_query($connection,$query_correo);
+        $row_cont_C = $verificar_correo->num_rows;
+        if($row_cont_C> 0){
+            echo "<!DOCTYPE html>
+                <html lang='es'>
+                <head>
+                  <title>La Voz de los mayores</title>
+                  <meta charset='UTF-8'>
+                  <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
+                
+                  <link href='css/style-ventana2.css' rel='stylesheet'>
+                  <link rel='shortcut icon' href='logo1.png'>
+                </head>
+                <body>
+                    <header class='general'>
+                            <div class='container-Msuperior'>
+                                <a href='index.html'><img class='logo' src='logo1.png'></a>
+                                <h1 class='title'>La Voz de los mayores</h1>
+                            </div>
+                            <div class='atras'>
+                                <a href='index.html'><button class='Atras' type='submit' name='Atras'>Atrás</button></a>
+                            </div>
+                    </header>
+                  <main class='main'>
+                    <div class='container-medio'>
+                      <div class='ventana'>
+                          <h2 class='form-title'>Este correo  ya fue registrado, intente con otro correo</h2>
+                          <div class='block'>
+                          </div>
+                        
+                
+                      <div class='botones'>
+                          <a href='registro.html'><button class='ok'>OK</button></a> 
+                
+                      </div>
+                  </div>        
+                </main>
+           </body>
+           
+           <footer>
+               <div class='container-inferior'>
+           
+               </div>
+           
+           </footer>
+           
+           </html>";
+            exit();
+        }       
+        //verificar que el nombre no se repita
+        $query_usuario="SELECT * FROM `USUARIOS` WHERE NOMBRE_U='$nombre_usuario' ";
+        $verificar_usuario = mysqli_query($connection,$query_usuario);
+        $row_cont_U = $verificar_usuario->num_rows;
+        if($row_cont_U> 0){
+            echo "<!DOCTYPE html>
+            <html lang='es'>
+            <head>
+                <title>La Voz de los mayores</title>
+                <meta charset='UTF-8'>
+                <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
             
+                <link href='css/style-ventana2.css' rel='stylesheet'>
+                <link rel='shortcut icon' href='logo1.png'>
+            </head>
+            <body>
+                <header class='general'>
+                    <div class='container-Msuperior'>
+                        <a href='index.html'><img class='logo' src='logo1.png'></a>
+                        <h1 class='title'>La Voz de los mayores</h1>
+                    </div>
+                    <div class='atras'>
+                        <a href='index.html'><button class='Atras' type='submit' name='Atras'>Atrás</button></a>
+                    </div>
+                </header>
+                <main class='main'>
+                <div class='container-medio'>
+                    <div class='ventana'>
+                        <h2 class='form-title'>Este usuario ya fue registrado, intente con otro usuario</h2>
+                        <div class='block'>
+                        </div>
+                    
+            
+                    <div class='botones'>
+                        <a href='registro.html'><button class='ok'>OK</button></a> 
+            
+                    </div>
+                </div>        
+            </main>
+        </body>
+        
+        <footer>
+            <div class='container-inferior'>
+        
+            </div>
+        
+        </footer>
+        
+        </html>";
+            exit();
+        }
             $ejecutar = mysqli_query($connection,$query);
 
-            if($ejecutar){
-                echo '
-                    <script>
-                        alert("Usuario creado exitosamente");
-                        window.location = "index.html";
-                    </script>
-                ';
+            if($ejecutar){              
+                echo "<!DOCTYPE html>
+                <html lang='es'>
+                <head>
+                  <title>La Voz de los mayores</title>
+                  <meta charset='UTF-8'>
+                  <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
+                
+                  <link href='css/style-ventana2.css' rel='stylesheet'>
+                  <link rel='shortcut icon' href='logo1.png'>
+                </head>
+                <body>
+                    <header class='general'>
+                        <div class='container-Msuperior'>
+                            <a href='index.html'><img class='logo' src='logo1.png'></a>
+                            <h1 class='title'>La Voz de los mayores</h1>
+                        </div>
+                        <div class='atras'>
+                            <a href='index.html'><button class='Atras' type='submit' name='Atras'>Atrás</button></a>
+                        </div>
+                     </header>
+                  <main class='main'>
+                    <div class='container-medio'>
+                      <div class='ventana'>
+                          <h2 class='form-title'>Usuario creado exitosamente</h2>
+                          <div class='block'>
+                          </div>
+                        
+                
+                      <div class='botones'>
+                          <a href='index2.html'><button class='ok'>OK</button></a> 
+                
+                      </div>
+                  </div>        
+                </main>
+           </body>
+           
+           <footer>
+               <div class='container-inferior'>
+           
+               </div>
+           
+           </footer>
+           
+           </html>";          
             }else{
-                echo '
-                    <script>
-                        alert("Intentelo de nuevo, usuario no creado");
-                        window.location = "registro.html";
-                    </script>
-                ';
+                echo "<!DOCTYPE html>
+                <html lang='es'>
+                <head>
+                  <title>La Voz de los mayores</title>
+                  <meta charset='UTF-8'>
+                  <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
+                
+                  <link href='css/style-ventana2.css' rel='stylesheet'>
+                  <link rel='shortcut icon' href='logo1.png'>
+                </head>
+                <body>
+                    <header class='general'>
+                            <div class='container-Msuperior'>
+                                <a href='index.html'><img class='logo' src='logo1.png'></a>
+                                <h1 class='title'>La Voz de los mayores</h1>
+                            </div>
+                            <div class='atras'>
+                                <a href='index.html'><button class='Atras' type='submit' name='Atras'>Atrás</button></a>
+                            </div>
+                    </header>
+                  <main class='main'>
+                    <div class='container-medio'>
+                      <div class='ventana'>
+                          <h2 class='form-title'>Intentelo de nuevo, usuario no creado</h2>
+                          <div class='block'>
+                          </div>
+                        
+                
+                      <div class='botones'>
+                          <a href='registro.html'><button class='ok'>OK</button></a> 
+                
+                      </div>
+                  </div>        
+                </main>
+           </body>
+           
+           <footer>
+               <div class='container-inferior'>
+           
+               </div>
+           
+           </footer>
+           
+           </html>"; 
             }
-        }else{
-            echo '
-            <script>
-                alert("Contraseña insegura, La contraseña debe contener una mayuscula, minuscula y numero");
-                window.location = "registro.html";
-            </script>
-        ';
-        }
+       
     }else{
-        echo '
-        <script>
-            alert("Error en la confirmacion de contraseña, Intentelo de nuevo");
-            window.location = "registro.html";
-        </script>
-    ';
+        echo "<!DOCTYPE html>
+        <html lang='es'>
+        <head>
+          <title>La Voz de los mayores</title>
+          <meta charset='UTF-8'>
+          <meta name='viewport' content='width=device-widtg, initiak-scale=1.0'>
+        
+          <link href='css/style-ventana2.css' rel='stylesheet'>
+          <link rel='shortcut icon' href='logo1.png'>
+        </head>
+        <body>
+            <header class='general'>
+                    <div class='container-Msuperior'>
+                        <a href='index.html'><img class='logo' src='logo1.png'></a>
+                        <h1 class='title'>La Voz de los mayores</h1>
+                    </div>
+                    <div class='atras'>
+                        <a href='index.html'><button class='Atras' type='submit' name='Atras'>Atrás</button></a>
+                    </div>
+            </header>
+          <main class='main'>
+            <div class='container-medio'>
+              <div class='ventana'>
+                  <h2 class='form-title'Error en la confirmacion de contraseña, Intentelo de nuevo</h2>
+                  <div class='block'>
+                  </div>
+                
+        
+              <div class='botones'>
+                  <a href='registro.html'><button class='ok'>OK</button></a> 
+        
+              </div>
+          </div>        
+        </main>
+   </body>
+   
+   <footer>
+       <div class='container-inferior'>
+   
+       </div>
+   
+   </footer>
+   
+   </html>"; 
     }
-    msyqli_close($connection);
-
-    function validar_clave($contrasena){
-        $res=true;
-        if(!preg_match('`[a-z]`',$contrasena)){
-            echo 'Clave debe tener una miniscula';
-            $res=false;
-        }
-        if(!preg_match('`[A-Z]`',$contrasena)){
-            echo 'Clave debe tener una mayuscula';
-            $res=false;
-        }
-        if(!preg_match('`[0-9]`',$contrasena)){
-            echo 'Clave debe tener una numero';
-            $res=false;
-        }
-        return $res;
-    }
+    msyqli_close($connection);      
 ?>

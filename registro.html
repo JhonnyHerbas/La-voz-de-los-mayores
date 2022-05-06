@@ -6,43 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Usuario</title>
     <link rel="stylesheet" href="css/estilo_registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="shortcut icon" href="logo1.png">
 </head>
 <body>
-    <div class="cotainer_todo">
+    <div class="container_todo">
         <header class="general">
+            <div class="container-Msuperior">
                 <div class="container-superior">
                     <a href="index.html"><img class="logo" src="logo1.png"></a>
                     <h1 class="title">La Voz de los mayores</h1>
-                </div>  
-                
-                <div class="container_atras">
-                    <a class="pagprinc" href="index.html">Atrás</a>
                 </div>
-                         
+                <div class="atras">
+                    <a href="index.html"><button class="Atras" type="submit" name="Atras">Atrás</button></a>
+                </div>   
+            </div>                               
         </header>
         <div class="container_medio">           
-            <div class="container_formulario">
-                <form action="registro_usuario.php" method="post" class="form">
-                    <div class="titulo">
-                        <h2 class="registrarse">Registrarse</h2>
-                    </div><br>
-                    <label for="name" class="name">Nombre de usuario:</label><br>
-                        <input type="text" id="name" class="lol" name="nombre" maxlength="50" minlength="4" required><br><br>
-                    <label for="correo" class="correo">Correo:</label><br>
-                        <input type="email" id="correo"  class="lol" name="correo" maxlength="100" required><br><br>
-                    <label for="contraseña">Contraseña:</label><br>
-                        <input type="password" name="contrasena" id="contraseña"  class="lol" maxlength="20" minlength="8" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br><br>
-                    <label for="con_contra">Confirmar contraseña:</label><br>
-                        <input type="password" name="contrasena2" value="" id="con_contra"  class="lol" maxlength="20" minlength="8" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br><br>
-                    <div class="container_boton">
-                        <button class="confirmar">Confirmar</button>
-                        <button class="cancelar" type="reset">Cancelar</button>
-                    </div>
-                </form>
-            </div>
+            
+                <div class="form">
+                    <form action="registro_usuario.php" method="post">
+                        <div class="titulo">
+                            <h2 class="registrarse">Registrarse</h2>
+                        </div><br>
+                        <!--NOMBRE-->
+                        <div class="block">
+                            <label for="name" class="name">Nombre de usuario</label><br>
+                            <input type="text" id="name" class="lol" name="nombre" maxlength="50"
+                             minlength="4" autocomplete="off" 
+                              required onkeyup="this.value=this.value.replace(/^\s+/,'');">
+                            <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
+                            <span class="msj"></span>
+                        </div>
+                        <!--CORREO-->
+                        <div class="block">
+                            <label for="correo" class="correo">Correo</label><br>
+                            <input type="email" id="correo"  class="lol" name="correo" maxlength="100" 
+                             autocomplete="off" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]*$" required>
+                             <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
+                            <span class="msj"></span>
+                        </div>
+                        <!--CONTRASEÑA-->
+                         <div class="block">
+                            <label for="contraseña">Contraseña</label><br>
+                            <input type="password" name="contrasena" id="contraseña"  class="lol" maxlength="20" 
+                            minlength="8" required pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$">
+                            <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
+                            <span class="msj"></span>
+                        </div>
+                        <!--CONFIRMAR CONTRASEÑA-->
+                        <div class="block">
+                            <label for="con_contra">Confirmar contraseña</label><br>
+                            <input type="password" name="contrasena2" value="" id="con_contra"  class="lol" maxlength="20" minlength="8" 
+                            required pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$">
+                            <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
+                            <span class="msj"></span>
+                        </div> 
+                        <!--BOTONES CONFIRMAR Y ACEPTAR-->                 
+                        <div class="botones">
+                            <a href="index2.html"><button class="confirmar" type="submit" id="confirmar" name="confirmar">Confirmar</button></a>
+                            <button class="cancelar" type="reset">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            
            
         </div>
     </div>
+ 
+    <footer>
+        <div class="container-inferior">
+    
+        </div>    
+    </footer>
 </body>
 </html>
