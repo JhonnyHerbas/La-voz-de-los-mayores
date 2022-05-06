@@ -42,7 +42,6 @@ create table HISTORIA
    TITULO_H             varchar(50) not null,
    DESCRIPCION_H        varchar(200) not null,
    ENLACE_H             varchar(150) not null,
-   TIEMPO_H             varchar(10) not null,
    primary key (ID_H)
 );
 
