@@ -47,7 +47,7 @@
                 echo '
                     <script>
                         alert("Usuario creado exitosamente");
-                        window.location = "index.html";
+                        window.location = "IniciarSesion.html";
                     </script>
                 ';
             }else{
