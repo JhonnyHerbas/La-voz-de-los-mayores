@@ -125,7 +125,12 @@
     color: aliceblue;
     font-family: Tahoma;
     font-size: 23px;
+    border: none;
+    cursor: pointer;
   }
+  .ok:hover{
+    background-color: #4a4a4a;
+}
   .container-inferior {
     background-color: #555855;
     position: relative;

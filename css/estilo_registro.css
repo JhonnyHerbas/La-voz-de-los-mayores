@@ -142,6 +142,10 @@ input{
     font-size: 20px;
     font-weight: normal;
     cursor: pointer;
+    border: none;
+}
+.confirmar:hover{
+    background-color: #4a4a4a;
 }
 .cancelar{
     align-items: center;
@@ -156,6 +160,10 @@ input{
     cursor: pointer;
     font-size: 20px;
     font-weight: normal;
+    border: none;
+}
+.cancelar:hover{
+    background-color: #4a4a4a;
 }
 .lol::after{
     content: '';
@@ -214,3 +222,4 @@ input[type="password"]:focus:invalid ~ .msj::after{
 input:valid + .icon-left{
     color: green;
     display: block;
+}
