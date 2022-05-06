@@ -162,7 +162,7 @@
                         
                 
                       <div class='botones'>
-                          <a href='index2.html'><button class='ok'>OK</button></a> 
+                          <a href='indexU.html'><button class='ok'>OK</button></a> 
                 
                       </div>
                   </div>        
