@@ -83,7 +83,7 @@ try{
     $file->setName($_FILES['archivo']['name']);
 
     $finfo = finfo_open(FILEINFO_MIME_TYPE);
-    $mime_type = "audio/mpeg";
+    $mime_type = finfo_file($finfo, $file_path);
     if(strcmp(strval($mime_type), "audio/mpeg")){
         echo "<!DOCTYPE html>
         <html lang='en'>
