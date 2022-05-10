@@ -32,12 +32,10 @@ function habilitar1(){
     }
     if(val == 0){
         document.getElementById("registrar").disabled = false;
-        document.getElementById("registrar").style.backgroundColor = "#555855";
-        //document.getElementById("btn").style = "cursor:pointer";
+        document.getElementById("registrar").style = "background-color:#555855;cursor:pointer;";
     }else{
         document.getElementById("registrar").disabled = true;
-        document.getElementById("registrar").style.backgroundColor = "#efb364";
-        //document.getElementById("btn").style = "cursor:default";
+        document.getElementById("registrar").style = "background-color:#efb364;cursor:default;";
     }
 
 }
@@ -49,5 +47,5 @@ document.getElementById("archivo").addEventListener("change", habilitar1);
 
 function desactivar1(){
     document.getElementById("registrar").disabled = true;
-    document.getElementById("registrar").style.backgroundColor = "#efb364";
+    document.getElementById("btn").style = "background-color:#efb364;cursor:default;";
 }

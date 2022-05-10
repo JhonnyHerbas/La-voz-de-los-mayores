@@ -27,12 +27,10 @@ function habilitar(){
     }
     if(val == 0){
         document.getElementById("btn").disabled = false;
-        document.getElementById("btn").style.backgroundColor = "#555855";
-        //document.getElementById("btn").style = "cursor:pointer";
+        document.getElementById("btn").style = "background-color:#555855;cursor:pointer;";
     }else{
         document.getElementById("btn").disabled = true;
-        document.getElementById("btn").style.backgroundColor = "#efb364";
-        //document.getElementById("btn").style = "cursor:default";
+        document.getElementById("btn").style = "background-color:#efb364;cursor:default;";
     }
 
 }
@@ -43,5 +41,5 @@ document.getElementById("archivo").addEventListener("change", habilitar);
 
 function desactivar(){
     document.getElementById("btn").disabled = true;
-    document.getElementById("btn").style.backgroundColor = "#efb364";
+    document.getElementById("btn").style = "background-color:#efb364;cursor:default;";
 }
