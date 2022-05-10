@@ -27,18 +27,18 @@
   <main class="main">
     <div class="container-medio">
       <div class="form-register">
-        <form action="SubirMusic.php" method="post" enctype="multipart/form-data">
+        <form id="formulario" action="SubirMusic.php" method="post" enctype="multipart/form-data">
           <h2 class="form-title">Registrar Musica</h2>
           <div class="block">
             <label>Nombre : </label>
-            <input required name="name" id="name" type="text" maxlength="50" 
+            <input required name="name" id="name" spellcheck="false" type="text" maxlength="50" 
             required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
             >
 
           </div>
           <div class="block">
             <label> Artista : </label>
-            <input required name="artista" id="artista" type="text" maxlength="50" 
+            <input required name="artista" id="artista" spellcheck="false" type="text" maxlength="50" 
             required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
             >
           </div>
@@ -69,9 +69,9 @@
           </div>
 
           <div class="botones">
-            <a href=""><button id="btn" class="registrar" type="submit" name="registrar" disabled >Registrar</button></a>
+            <a href=""><button id="btn" class="registrar" type="submit" name="registrar" disabled>Registrar</button></a>
             
-            <button class="cancelar" type="reset">Cancelar</button>
+            <button id="cancelar" class="cancelar" type = "reset" onclick = "desactivar()" >Cancelar</button>
           </div>
 
         </form>
