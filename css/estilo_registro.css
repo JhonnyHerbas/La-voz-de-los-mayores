@@ -117,7 +117,7 @@ label{
 input{
     margin-top: 1%;
     background: none;
-    width: 100%;
+    width: 90%;
     height: 30px;
     color: black;
     border: none;
@@ -207,15 +207,15 @@ input:focus:invalid ~ .msj::after{
     right: 0;
 }
 input[type="text"]:focus:invalid ~ .msj::after{
-    content: 'Ingrese un nombre de usuario mayor a 3 caracteres';
+    content: 'Ingrese solo letras';
 }
 
 input[type="email"]:focus:invalid ~ .msj::after{
-    content: 'Ingrese un correo válido, ejemplo@correo.com';
+    content: 'Correo valido: ejemplo@correo.com';
 }
 
 input[type="password"]:focus:invalid ~ .msj::after{
-    content: 'Ingrese una contraseña segura, Ejemplo:"#HolaMundo1"';
+    content: 'Contraseña insegura';
 }
 
 

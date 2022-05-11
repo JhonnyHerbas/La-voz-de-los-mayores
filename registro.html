@@ -32,8 +32,8 @@
                         <!--NOMBRE-->
                         <div class="block">
                             <label for="name" class="name">Nombre de usuario</label><br>
-                            <input type="text" id="name" class="lol" name="nombre" maxlength="50"
-                             minlength="4" autocomplete="off" 
+                            <input type="text" id="name" class="lol" name="nombre"  minlength="4" maxlength="50"
+                             autocomplete="off"  pattern="^([a-zA-z]){4,50}$"
                               required onkeyup="this.value=this.value.replace(/^\s+/,'');">
                             <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
                             <span class="msj"></span>
