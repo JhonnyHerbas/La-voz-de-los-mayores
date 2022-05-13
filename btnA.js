@@ -32,8 +32,10 @@ function habilitar1(){
     }
     if(val == 0){
         document.getElementById("registrar").disabled = false;
+        document.getElementById("registrar").style = "background-color:#555855;cursor:pointer;";
     }else{
         document.getElementById("registrar").disabled = true;
+        document.getElementById("registrar").style = "background-color:#efb364;cursor:default;";
     }
 
 }
@@ -42,3 +44,8 @@ document.getElementById("autor").addEventListener("keyup", habilitar1);
 document.getElementById("narrador").addEventListener("keyup", habilitar1);
 document.getElementById("categoria").addEventListener("change", habilitar1);
 document.getElementById("archivo").addEventListener("change", habilitar1);
+
+function desactivar1(){
+    document.getElementById("registrar").disabled = true;
+    document.getElementById("registrar").style = "background-color:#efb364;cursor:default;";
+}
