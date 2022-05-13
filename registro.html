@@ -10,18 +10,15 @@
     <link rel="shortcut icon" href="logo1.png">
 </head>
 <body>
-    <div class="container_todo">
-        <header class="general">
-            <div class="container-Msuperior">
-                <div class="container-superior">
-                    <a href="index.html"><img class="logo" src="logo1.png"></a>
-                    <h1 class="title">La Voz de los mayores</h1>
+    <div class="general">
+
+            <div class="container-superior">
+                <img class="logo" src="logo1.png">
+                <h1 class="title">La Voz de los mayores</h1>
+                <div class="registro-inicio">
+                    <a href="index.html" class="atras">Atrás</a>
                 </div>
-                <div class="atras">
-                    <a href="index.html"><button class="Atras" type="submit" name="Atras">Atrás</button></a>
-                </div>   
-            </div>                               
-        </header>
+            </div>                     
         <div class="container_medio">           
             
                 <div class="form">
@@ -32,8 +29,8 @@
                         <!--NOMBRE-->
                         <div class="block">
                             <label for="name" class="name">Nombre de usuario</label><br>
-                            <input type="text" id="name" class="lol" name="nombre" maxlength="50"
-                             minlength="4" autocomplete="off" 
+                            <input type="text" id="name" class="lol" name="nombre"  minlength="4" maxlength="50"
+                             autocomplete="off"  pattern="^([a-zA-z]){4,50}$"
                               required onkeyup="this.value=this.value.replace(/^\s+/,'');">
                             <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
                             <span class="msj"></span>
