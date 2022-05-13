@@ -248,7 +248,7 @@
           <main class='main'>
             <div class='container-medio'>
               <div class='ventana'>
-                  <h2 class='form-title'Error en la confirmacion de contraseña, Intentelo de nuevo</h2>
+                  <h2 class='form-title'>Error en la confirmacion de contraseña, Intentelo de nuevo</h2>
                   <div class='block'>
                   </div>
                 
