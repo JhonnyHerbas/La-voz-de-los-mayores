@@ -175,6 +175,7 @@ select{
     font-family: Tahoma;
     font-size: 23px;
     position: relative;
+    cursor: pointer;
 
 }
 .cancelar{
@@ -186,6 +187,7 @@ select{
     color: aliceblue;
     font-family: Tahoma;
     font-size: 23px;
+    cursor: pointer;
 }
 label {
     display:inline-block;
