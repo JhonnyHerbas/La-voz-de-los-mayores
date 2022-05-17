@@ -45,7 +45,7 @@ document.getElementById("narrador").addEventListener("keyup", habilitar1);
 document.getElementById("categoria").addEventListener("change", habilitar1);
 document.getElementById("archivo").addEventListener("change", habilitar1);
 
-function desactivar(){
+function desactivar1(){
     document.getElementById("registrar").disabled = true;
     document.getElementById("registrar").style = "background-color:#efb364;cursor:default;";
 }
