@@ -144,7 +144,7 @@ input{
     width: 15px;
 }
 .lista-musica::-webkit-scrollbar-thumb{
-    background: rgba(228, 179, 147, 0.479);
+    background: #ffc172;
 	border-radius: 10px;
 }
 .lista-musica::-webkit-scrollbar-thumb:hover{
@@ -164,7 +164,7 @@ input{
     width: 100%;
 }
 .container-musica{
-    background-color: rgba(228, 179, 147, 0.479);
+    background-color: #ffc172;
     width: 80%;
     height: 7%;
     margin: auto;
@@ -173,13 +173,13 @@ input{
 .botones{
     text-align: center;
     justify-content: center;
-    background-color: rgba(228, 179, 147, 0.479);
+    background-color: #ffc172;
     width: 100%;
     height: 100%;
     margin: auto;
 }
 .container-musica:hover{
-    background-color: #ffc172;
+    background-color: #f19236;
     transition: 100ms;
     width: 80%;
     height: 7%;
