@@ -41,7 +41,7 @@ $(function () {
     })
     function siguiente() {
         console.log("holamundo")
-        if (idactual === totalmusicas) {
+        if (idactual === totalaudiolibros) {
             alert('ya no hay mas audiolibros para reproducir')
         }
         else {
