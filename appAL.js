@@ -28,7 +28,7 @@ $(function () {
                         </table><br>
                     `
                 });
-                $('#lista-musica').html(template);
+                $('#lista-audiolibro').html(template);
             }
         })
     }
@@ -65,7 +65,7 @@ $(function () {
     $(document).on('click', '.boton-anterior', anterior);
     const aud = document.getElementById('audio-player')
     aud.addEventListener('ended', siguiente);
-    const sourceAudio = document.getElementById("music-source")
+    const sourceAudio = document.getElementById("audiolibro-source")
     function play(id) {
         $.ajax({
 
@@ -86,8 +86,8 @@ $(function () {
                 }
                 );
 
-                $('#nombreM').html(template2);
-                $('#nombreA').html(template3);
+                $('#nombreAL').html(template2);
+                $('#nombreAAL').html(template3);
                 player.load()
 
             }
