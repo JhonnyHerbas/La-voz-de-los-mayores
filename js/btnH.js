@@ -24,11 +24,19 @@ function habilitar(){
     }
     if(val == 0){
         document.getElementById("registrar").disabled = false;
+        document.getElementById("registrar").style = "background-color:#555855;cursor:pointer;";
     }else{
         document.getElementById("registrar").disabled = true;
+        document.getElementById("registrar").style = "background-color:#efb364;cursor:default;";
     }
+
 
 }
 document.getElementById("name").addEventListener("keyup", habilitar);
 document.getElementById("descripcion").addEventListener("keyup", habilitar);
 document.getElementById("archivo").addEventListener("change", habilitar);
+
+function desactivar(){
+    document.getElementById("registrar").disabled = true;
+    document.getElementById("registrar").style = "background-color:#efb364;cursor:default;";
+}
