@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registrar Historia-LVM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo_regAudiolibro.css" rel="stylesheet">
+    <link rel="shortcut icon" href="logo1.png">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-superior">
+            <div>
+                <a href="indexU.html"><img class="logo" src="logo1.png"> </a>
+                <h1 class="title"> La Voz de los mayores</h1>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a class="pagprinc" href="historia.html">Atrás</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container-medio">
+            <div class="reg-audiolibro">
+                <form action="RegistroHistoria.php" method="post" enctype="multipart/form-data" class="form-disable">
+                    <h2 class="form-title">Registrar Historia</h2>
+                    <div class="block">
+                        <label>Titulo : </label>
+                        <input required type="text" maxlength="50" name="name" id="name"
+                        required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
+                        >
+                    </div>
+                    <div class="block">
+                        <label>Descripción : </label>
+                        <input required type="text" maxlength="50" name="descripcion" id="descripcion"
+                        required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
+                        >
+                    <div class="block">
+                        <label>Historia : </label>
+                        <input required class="bot1" type="file" name="archivo" id="archivo"  accept=".mp3">
+                    </div>
+                    <div class="botones">
+                        <button type="submit" class="registrar" name="registrar" id="registrar" disabled >Registrar</button>
+                        <button class="cancelar" type="reset">Cancelar</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="container-inferior">
+    
+        </div>
+    
+    </footer>
+    <script src="btnH.js"></script>
+</body>
+
+
+
+</html>
