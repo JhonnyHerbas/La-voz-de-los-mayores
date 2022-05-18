@@ -43,7 +43,7 @@ try{
                    </div>
                    <nav class='navigation'>
                        <ul>
-                           <li><a class='pagprinc' href='indexU.html'>Atrás</a></li>
+                           <li><a class='pagprinc' href='regMus.html'>Atrás</a></li>
                        </ul>
                    </nav>
                    

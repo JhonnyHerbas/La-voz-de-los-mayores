@@ -104,7 +104,7 @@ try{
                   </div>
                   <nav class='navigation'>
                       <ul>
-                          <li><a class='pagprinc' href='musicaU.html'>Atrás</a></li>
+                          <li><a class='pagprinc' href='regAudiolibro.html'>Atrás</a></li>
                       </ul>
                   </nav>
                   
@@ -174,7 +174,7 @@ try{
               </div>
               <nav class='navigation'>
                   <ul>
-                      <li><a class='pagprinc' href='musicaU.html'>Atrás</a></li>
+                      <li><a class='pagprinc' href='regAudiolibro.html'>Atrás</a></li>
                   </ul>
               </nav>
               
@@ -189,7 +189,7 @@ try{
             
     
           <div class='botones'>
-              <a href='audiolibro.html'><button class='ok'>OK</button></a> 
+              <a href='audiolibroU.html'><button class='ok'>OK</button></a> 
     
           </div>
     

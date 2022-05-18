@@ -40,7 +40,7 @@ try{
                    </div>
                    <nav class='navigation'>
                        <ul>
-                           <li><a class='pagprinc' href='indexU.html'>Atrás</a></li>
+                           <li><a class='pagprinc' href='regHis.html'>Atrás</a></li>
                        </ul>
                    </nav>
                    
@@ -101,7 +101,7 @@ try{
                   </div>
                   <nav class='navigation'>
                       <ul>
-                          <li><a class='pagprinc' href='musicaU.html'>Atrás</a></li>
+                          <li><a class='pagprinc' href='regHis.html'>Atrás</a></li>
                       </ul>
                   </nav>
                   
@@ -116,7 +116,7 @@ try{
                 
         
               <div class='botones'>
-                  <a href='regHistoria.html'><button class='ok'>OK</button></a> 
+                  <a href='regHis.html'><button class='ok'>OK</button></a> 
         
               </div>
           </div>        
@@ -171,7 +171,7 @@ try{
               </div>
               <nav class='navigation'>
                   <ul>
-                      <li><a class='pagprinc' href='musicaU.html'>Atrás</a></li>
+                      <li><a class='pagprinc' href='regHis.html'>Atrás</a></li>
                   </ul>
               </nav>
               
@@ -186,7 +186,7 @@ try{
             
     
           <div class='botones'>
-              <a href='historia.html'><button class='ok'>OK</button></a> 
+              <a href='historiaU.html'><button class='ok'>OK</button></a> 
     
           </div>
     
