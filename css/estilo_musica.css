@@ -43,7 +43,7 @@ body {
     position: relative;
     top: 25px;
     left: 50px;
-    font-size: 35px;
+    font-size: 30px;
     color: white;
     float: left;
 }
@@ -101,6 +101,34 @@ body {
     position: relative;
     left: 0%;
 }
+.buscador{
+    width: 80%;
+    height: 40px;
+    margin: 0px auto;
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+}
+#busqueda{
+    width: 40%;
+    height: 40px;
+    margin: 0px auto;
+    font-size: 20px;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+input{
+    margin-top: 1%;
+    background:#555855 ;
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: 0px;
+    font-size: 18px;
+    border-radius: 15px;
+}
 .lista-musica{
     margin: auto;
     top: 5%;
@@ -108,7 +136,7 @@ body {
     position: relative;
     margin-right: 10%;
     margin-left: 10%;
-    height: 80%;
+    height: 70%;
     box-shadow: 5px 9px 3px black;
     overflow: auto;
 }
@@ -116,7 +144,7 @@ body {
     width: 15px;
 }
 .lista-musica::-webkit-scrollbar-thumb{
-    background: rgba(228, 179, 147, 0.479);
+    background: #ffc172;
 	border-radius: 10px;
 }
 .lista-musica::-webkit-scrollbar-thumb:hover{
@@ -136,7 +164,7 @@ body {
     width: 100%;
 }
 .container-musica{
-    background-color: rgba(228, 179, 147, 0.479);
+    background-color:#ffc172;
     width: 80%;
     height: 7%;
     margin: auto;
@@ -145,13 +173,13 @@ body {
 .botones{
     text-align: center;
     justify-content: center;
-    background-color: rgba(228, 179, 147, 0.479);
+    background-color: #ffc172;
     width: 100%;
     height: 100%;
     margin: auto;
 }
 .container-musica:hover{
-    background-color: #ffc172;
+    background-color: #f19236;
     transition: 100ms;
     width: 80%;
     height: 7%;
@@ -285,4 +313,10 @@ button{
 }
 .registro:hover{
     color: #f98009;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
 }

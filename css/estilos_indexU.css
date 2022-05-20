@@ -26,10 +26,45 @@ a {
     height: 100%;
     overflow: hidden;
 }
-
-.container-superior {
+.header{
     position: relative;
     width: 100%;
+    height: 100px;
+    background-color: #555855;
+    text-align: center;
+    display: flex;
+}
+.sesion_user{
+    position: relative;
+    width: 20%;
+    height: 100px;
+    background-color: #555855;
+    text-align: center;
+    display: flex;
+}
+.usuario{
+    position: relative;
+    width: 12%;
+    height: 100px;
+    background-color: #555855;
+    text-align: center;
+}
+.cerrar_sesion{
+    position: relative;
+    width: 8%;
+    height: 100px;
+    background-color: #555855;
+    text-align: center;
+}
+.cerrar{
+    margin: 0px auto;
+}
+h4{
+    color: white;
+}
+.container-superior {
+    position: relative;
+    width: 80%;
     height: 100px;
     background-color: #555855;
     text-align: center;
