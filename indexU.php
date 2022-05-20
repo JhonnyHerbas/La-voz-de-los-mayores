@@ -1,3 +1,18 @@
+<?php 
+    //variable de sesion
+    session_start();
+    include 'conexion.php';
+    //variable de sesion
+    $usuario = $_SESSION['NOMBRE_U'];
+    if(!isset($usuario)){
+        header("location: index1.php");
+    }
+    $query = "SELECT * FROM USUARIOS WHERE NOMBRE_U = '$usuario'";
+    $ejecuta= $connection->query($query);
+    $row = $ejecuta ->fetch_assoc();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,22 +31,14 @@
             <img class="logo" src="logo1.png">
             <h1 class="title">La Voz de los mayores</h1>
             <div class="registro-inicio">
-                <a href="IniciarSesion.html" class="inicio">Iniciar sesion</a>
-                <a href="registro.html" class="registro">Registrarse</a>
+                <h6><?php echo $usuario;?></h6>
+                <a href="cerrars.php" class="inicio">Cerrar sesion</a>
             </div>
         </div>
         <div class="container-medio">
             <div class="container-musica">
-                <a class="logmusica" href="musica.html"><img class="logomusica" src="logomusica.png" /></a><br>
+                <a class="logmusica" href="musicaU.html"><img class="logomusica" src="logomusica.png" /></a><br>
                 <a class="musica">Música</a>
-            </div>
-            <div class="container-musica">
-                <a class="logmusica" href="audiolibro.html"><img class="logomusica" src="img/logo-audio.png" /></a><br>
-                <a class="musica">Audilibro</a>
-            </div>
-            <div class="container-musica">
-                <a class="logmusica" href="historia.html"><img class="logomusica" src="img/microfono.png" /></a><br>
-                <a class="musica">Historia</a>
             </div>
         </div>
         <div class="container-inferior">
@@ -46,3 +53,4 @@
 </body>
 
 </html>
+

@@ -1,3 +1,30 @@
+<?php
+    session_start();
+    error_reporting(0);
+    include('conexion.php'); 
+    if(isset($_POST['entrar'])){
+        $usuario= $_POST['usuario'];
+        $contrasena = $_POST['contrasena'];
+
+         $usuario1 = str_replace("'", "’", $usuario);
+        $contrasena1 = str_replace("'", "’", $contrasena);
+
+         $query = "SELECT * FROM USUARIOS WHERE NOMBRE_U='$usuario1' and CONTRASENIA_U='$contrasena1' ";
+         $validar_inicio = mysqli_query($connection , $query);
+
+        $row_cont = $validar_inicio->num_rows;
+ 
+         if($row_cont >0){
+             $_SESSION['login']=TRUE;
+             $_SESSION['NOMBRE_U']=$usuario1;
+            header("location:indexU.php") ;
+         }else{
+            $mensaje.="<div class='mesange'>Datos correctamente ingresados</div>";      
+         }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +33,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio Sesion</title>
     <link rel="shortcut icon" href="logo1.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="css/Inicio_sesion.css">
-</head>
+</head> 
 <body>
     <div class="conatiner_todo">
         <header class="general">
@@ -25,7 +51,7 @@
             <div class="lado_izquierda">
                 <!--Contenedor del formulario-->
                 <div class="form">
-                    <form action="inicio_sesion.php" method="post">
+                    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
                         <!--Titulo-->
                         <div class="titulo">
                             <h2 class="iniciar_session">Iniciar Sesión</h2>
@@ -52,7 +78,9 @@
                             <button class="entrar" type="submit" id="entrar" name="entrar">Entrar</button>
                         </div>
                     </form>
+                    <?php echo $mensaje?>
                 </div>
+               
             </div>
             <!--Lado del mensaje de registro-->
             <div class="lado_derecho">

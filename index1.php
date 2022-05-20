@@ -1,3 +1,7 @@
+<?php 
+//Solicitar conexion base datos;
+include 'conexion.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,13 +20,22 @@
             <img class="logo" src="logo1.png">
             <h1 class="title">La Voz de los mayores</h1>
             <div class="registro-inicio">
-                <a href="index.html" class="inicio">Cerrar sesion</a>
+                <a href="IniciarSesion.php" class="inicio">Iniciar sesion</a>
+                <a href="registro.html" class="registro">Registrarse</a>
             </div>
         </div>
         <div class="container-medio">
             <div class="container-musica">
-                <a class="logmusica" href="musicaU.html"><img class="logomusica" src="logomusica.png" /></a><br>
+                <a class="logmusica" href="musica.html"><img class="logomusica" src="logomusica.png" /></a><br>
                 <a class="musica">Música</a>
+            </div>
+            <div class="container-musica">
+                <a class="logmusica" href="audiolibro.html"><img class="logomusica" src="img/logo-audio.png" /></a><br>
+                <a class="musica">Audilibro</a>
+            </div>
+            <div class="container-musica">
+                <a class="logmusica" href="historia.html"><img class="logomusica" src="img/microfono.png" /></a><br>
+                <a class="musica">Historia</a>
             </div>
         </div>
         <div class="container-inferior">
