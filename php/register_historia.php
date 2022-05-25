@@ -47,13 +47,13 @@
                     <h2 class="form-title">Registrar Historia</h2>
                     <div class="block">
                         <label>Titulo : </label>
-                        <input required type="text" maxlength="50" name="name" id="name"
+                        <input required type="text" maxlength="50" name="name" id="name" spellcheck="false"
                         required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
                         >
                     </div>
                     <div class="block">
                         <label>Descripción : </label>
-                        <input required type="text" maxlength="50" name="descripcion" id="descripcion"
+                        <input required type="text" maxlength="50" name="descripcion" id="descripcion" spellcheck="false"
                         required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
                         >
                     <div class="block">

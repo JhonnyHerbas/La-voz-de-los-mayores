@@ -47,19 +47,19 @@
                     <h2 class="form-title">Registrar Audiolibro</h2>
                     <div class="block">
                         <label>Nombre : </label>
-                        <input required type="text" maxlength="50" name="name" id="name"
+                        <input required type="text" maxlength="50" name="name" id="name" spellcheck="false"
                         required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
                         >
                     </div>
                     <div class="block">
                         <label>Autor : </label>
-                        <input required type="text" maxlength="50" name="autor" id="autor"
+                        <input required type="text" maxlength="50" name="autor" id="autor" spellcheck="false"
                         required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
                         >
                     </div>
                     <div class="block">
                         <label>Narrador : </label>
-                        <input  type="text" maxlength="50" name="narrador" id="narrador"
+                        <input  type="text" maxlength="50" name="narrador" id="narrador" spellcheck="false"
                          onkeyup = "this.value=this.value.replace(/^\s+/,'');"
                         >
                     </div>

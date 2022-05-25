@@ -169,7 +169,7 @@
     justify-content: center;
     width: 20%;
     height: 40px;
-    background: #555855;
+    background: #efb364;
     color: aliceblue;
     font-family: Tahoma;
     font-size: 23px;
@@ -185,6 +185,7 @@
     color: aliceblue;
     font-family: Tahoma;
     font-size: 23px;
+    cursor: pointer;
   }
   label {
     display:inline-block;
