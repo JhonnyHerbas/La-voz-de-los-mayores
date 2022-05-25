@@ -8,7 +8,7 @@
     if(empty($buscar)){
 
         $query = "select H.ID_H,H.TITULO_H,U.NOMBRE_U,H.DESCRIPCION_H from HISTORIA AS H, USUARIOS AS U 
-        WHERE  H.ID_U=U.ID_U";       
+        WHERE  H.ID_U=U.ID_U ORDER BY ID_H";       
         $result=mysqli_query($connection, $query);
         if(!$result){
             die('Quey Error'.mysqli_error($connection));

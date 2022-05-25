@@ -2,7 +2,7 @@
 
     include('../include/conexion.php');
 
-    $query = "select ID_AL,NOMBRE_AL,AUTOR_AL,NARRADOR_AL,CATEGORIA_AL from  AUDIOLIBRO";
+    $query = "select ID_AL,NOMBRE_AL,AUTOR_AL,NARRADOR_AL,CATEGORIA_AL from  AUDIOLIBRO ORDER BY ID_AL";
     $result =mysqli_query($connection, $query);
 
     if(!$result){

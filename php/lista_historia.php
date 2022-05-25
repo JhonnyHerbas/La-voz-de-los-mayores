@@ -3,7 +3,7 @@
     include('../include/conexion.php');
 
     $query = "select H.ID_H,H.TITULO_H,U.NOMBRE_U,H.DESCRIPCION_H from HISTORIA AS H, USUARIOS AS U 
-                    WHERE  H.ID_U=U.ID_U";
+                    WHERE  H.ID_U=U.ID_U ORDER BY ID_H";
     /*$query = "select ID_H,TITULO_H,ID_U,DESCRIPCION_H from HISTORIA";          */    
     $result =mysqli_query($connection, $query);
     if(!$result){
