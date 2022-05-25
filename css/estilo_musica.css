@@ -13,8 +13,6 @@ ul {
 body {
     background-color: white;
     min-width: 930px;
-
-    
 }
 
 .general{
@@ -335,4 +333,11 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
     display: none;
+}
+
+.alerta{
+    color: white;
+    margin: 0px auto;
+    margin-top: 15%;
+    font-size: 30px;
 }

@@ -15,23 +15,31 @@ $(function(){
                 let template = '';
                 let musicas = JSON.parse(response);
                 totalmusicas = musicas.length;
-                musicas.forEach(musica => {
-                    template +=`
-                                <br><table class="container-musica" idMusica="${musica.ID_M}">
-                                        <tr>
-                                            <td class='id'>${musica.ID_M}</td>
-                                            <td class='plays'>
-                                                <button class="lista">
-                                                    <img class="play" src="../img/play.png">
-                                                </button>
-                                            </td>
-                                            <td class='nombre'>${musica.NOMBRE_M}</td>
-                                            <td class='autor'>${musica.AUTOR_M}</td>
-                                            <td class='genero'>${musica.CATEGORIA_M}</td>
-                                        </tr>
-                                    </table><br>
+                let aux = musicas.length; 
+                if(aux == 0){
+                    template += 
                     `
-                });
+                     <h2 class='alerta'>No se ha encontrado ningún resultado</h2>    
+                    `;
+                }else{
+                    musicas.forEach(musica => {
+                        template +=`
+                                    <br><table class="container-musica" idMusica="${musica.ID_M}">
+                                            <tr>
+                                                <td class='id'>${musica.ID_M}</td>
+                                                <td class='plays'>
+                                                    <button class="lista">
+                                                        <img class="play" src="../img/play.png">
+                                                    </button>
+                                                </td>
+                                                <td class='nombre'>${musica.NOMBRE_M}</td>
+                                                <td class='autor'>${musica.AUTOR_M}</td>
+                                                <td class='genero'>${musica.CATEGORIA_M}</td>
+                                            </tr>
+                                        </table><br>
+                        `
+                    });
+                }                
                 $('#lista-musica').html(template);
             }
         })

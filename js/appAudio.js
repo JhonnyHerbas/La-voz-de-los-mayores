@@ -16,24 +16,32 @@ $(function () {
                 let template = '';
                 let audiolibros = JSON.parse(response);
                 totalaudiolibros = audiolibros.length;
-                audiolibros.forEach(audiolibro => {
-                    template +=`<br>
-                                    <table class="container-musica" idMusica="${audiolibro.ID_AL}">
-                                        <tr>
-                                            <td class='id'>${audiolibro.ID_AL}</td>
-                                            <td class='plays'>
-                                                <button class="lista">
-                                                    <img class="play" src="../img/play.png">
-                                                </button>
-                                            </td>
-                                            <td class='nombre'>${audiolibro.NOMBRE_AL}</td>
-                                            <td class='autor'>${audiolibro.AUTOR_AL}</td>
-                                            <td class='genero'>${audiolibro.NARRADOR_AL}</td>
-                                            <td class='genero'>${audiolibro.CATEGORIA_AL}</td>
-                                        </tr>
-                                    </table><br>
+                let aux = audiolibros.length;
+                if(aux == 0 ){
+                    template += 
                     `
-                });
+                     <h2 class='alerta'>No se ha encontrado ningún resultado</h2>    
+                    `;
+                }else{
+                    audiolibros.forEach(audiolibro => {
+                        template +=`<br>
+                                        <table class="container-musica" idMusica="${audiolibro.ID_AL}">
+                                            <tr>
+                                                <td class='id'>${audiolibro.ID_AL}</td>
+                                                <td class='plays'>
+                                                    <button class="lista">
+                                                        <img class="play" src="../img/play.png">
+                                                    </button>
+                                                </td>
+                                                <td class='nombre'>${audiolibro.NOMBRE_AL}</td>
+                                                <td class='autor'>${audiolibro.AUTOR_AL}</td>
+                                                <td class='genero'>${audiolibro.NARRADOR_AL}</td>
+                                                <td class='genero'>${audiolibro.CATEGORIA_AL}</td>
+                                            </tr>
+                                        </table><br>
+                        `
+                    });
+                }               
                 $('#lista-musica').html(template);
             }
         })

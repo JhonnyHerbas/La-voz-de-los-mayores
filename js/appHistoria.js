@@ -16,6 +16,13 @@ $(function () {
                 let template = '';
                 let historias = JSON.parse(response);
                 totalhistorias = historias.length;
+                let aux = historias.length;
+                if(aux == 0){
+                        template += 
+                        `
+                         <h2 class='alerta'>No se ha encontrado ningún resultado</h2>    
+                        `;
+            }else{
                 historias.forEach(historia => {
                     template += 
                     `
@@ -34,6 +41,7 @@ $(function () {
                         </table><br>
                 `
                 });
+            }
                 $('#lista-musica').html(template);
             }
         })
