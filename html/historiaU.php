@@ -38,9 +38,14 @@
 
         <div class="container-medio">
             <br>
-            <div class="buscador">
-                <input type="search" class="buscar" name="busqueda" id="busqueda" placeholder="Buscar"
-                maxlength="50"  spellcheck="false" >
+            <div class="busqueda">
+                <div class="lupa">
+                        <img class="lupita" src="../img/lupa.png" >
+                    </div>
+                <div class="buscador">
+                    <input type="search" class="buscar" name="busqueda" id="busqueda" placeholder="Buscar"
+                    maxlength="50"  spellcheck="false" >
+                </div>
             </div>
             <br>
             <div class="title-musica">

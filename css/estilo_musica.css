@@ -102,16 +102,32 @@ body {
     position: relative;
     left: 0%;
 }
-.buscador{
+.busqueda{
     width: 80%;
     height: 40px;
     margin: 0px auto;
     text-align: right;
     align-items: center;
+    justify-content: right;
+    display: flex;
+}
+.buscador{
+    width: 40%;
+    height: 40px;
+}
+.lupa{
+    background-color: #555855;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    align-items: center;
     justify-content: center;
 }
+.lupita{
+    margin: 0px auto;
+}
 #busqueda{
-    width: 40%;
+    width: 100%;
     height: 40px;
     margin: 0px auto;
     font-size: 20px;
@@ -128,7 +144,6 @@ input{
     border: none;
     outline: 0px;
     font-size: 18px;
-    border-radius: 15px;
 }
 .lista-musica{
     margin: auto;
