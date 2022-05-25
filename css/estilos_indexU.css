@@ -51,7 +51,7 @@ a {
 }
 .cerrar_sesion{
     position: relative;
-    width: 8%;
+    width: 12%;
     height: 100px;
     background-color: #555855;
     text-align: center;
@@ -64,7 +64,7 @@ h4{
 }
 .container-superior {
     position: relative;
-    width: 80%;
+    width: 75%;
     height: 100px;
     background-color: #555855;
     text-align: center;
