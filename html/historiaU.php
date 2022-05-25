@@ -40,7 +40,7 @@
             <br>
             <div class="buscador">
                 <input type="search" class="buscar" name="busqueda" id="busqueda" placeholder="Buscar"
-                maxlength="50"  spellcheck="false" >
+                maxlength="50"  spellcheck="false" required onkeyup = "this.value=this.value.replace(/^\s+/,'');">
             </div>
             <br>
             <div class="title-musica">
@@ -49,7 +49,7 @@
                         <td class='t1'><b>N°</b></td>
                         <td class='t2'><b>Historia</b></td>
                         <td class='t3'><b>Usuario</b></td>
-                        <td class='t4'><b>Descripcion</b></td>
+                        <td class='t4'><b>Descripción</b></td>
                     </tr>
                 </table>
             </div>

@@ -175,6 +175,9 @@ select{
     font-family: Tahoma;
     font-size: 23px;
     position: relative;
+    border-color: #f07f06;
+    border-width: 3px;
+    border-style: solid;
 }
 .cancelar{
     align-items: center;

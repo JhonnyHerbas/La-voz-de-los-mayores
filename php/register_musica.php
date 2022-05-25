@@ -45,14 +45,14 @@
           <h2 class="form-title">Registrar Musica</h2>
           <div class="block">
             <label>Nombre : </label>
-            <input required name="name" id="name" type="text" maxlength="50" spellcheck="false"
+            <input required name="name" id="name" type="text" maxlength="50" spellcheck="false"  minlength="3"
             required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
             >
 
           </div>
           <div class="block">
             <label> Artista : </label>
-            <input required name="artista" id="artista" type="text" maxlength="50" spellcheck="false"
+            <input required name="artista" id="artista" type="text" maxlength="50" spellcheck="false" minlength="3"
             required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
             >
           </div>

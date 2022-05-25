@@ -19,7 +19,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproductor Musica - La voz de los mayores</title>
+    <title>Reproductor Música - La voz de los mayores</title>
     <link rel="stylesheet" href="../css/estilo_musica.css" />
     <link rel="shortcut icon" href="../img/logo1.png">
 </head>
@@ -28,9 +28,9 @@
     <div class="general">
         <div class="container-superior">
             <a href="../indexU.php"><img class="logo" src="../img/logo1.png"></a>
-            <h1 class="title">La Voz de los mayores - Seccion Musicas</h1>
+            <h1 class="title">La Voz de los mayores - Seccion Músicas</h1>
             <div class="registro-inicio">
-                <a href="../php/register_musica.php" class="inicio">Registrar musica</a>
+                <a href="../php/register_musica.php" class="inicio">Registrar música</a>
                 <a href="../include/cerrars.php" class="registro">Cerrar Sesión</a>
             </div>
         </div>
@@ -39,7 +39,7 @@
             <br>
             <div class="buscador">
                 <input type="search" class="buscar" name="busqueda" id="busqueda" placeholder="Buscar"
-                maxlength="50"  spellcheck="false" >
+                maxlength="50"  spellcheck="false" required onkeyup = "this.value=this.value.replace(/^\s+/,'');">
             </div>
             <br>
             <div class="title-musica">
