@@ -13,6 +13,7 @@ ul {
 body {
     background-color: white;
     min-width: 930px;
+
     
 }
 
@@ -51,7 +52,7 @@ body {
     background-color: #f19236;
     position: relative;
     width: 100%;
-    height: 750px;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     text-align: center;
