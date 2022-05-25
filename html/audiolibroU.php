@@ -28,7 +28,7 @@
     <div class="general">
         <div class="container-superior">
             <a href="../indexU.php"><img class="logo" src="../img/logo1.png"></a>
-            <h1 class="title">La Voz de los mayores -  Seccion Audiolibros</h1>
+            <h1 class="title">La Voz de los mayores - Audiolibros</h1>
             <div class="registro-inicio">
                 <a href="../php/register_audiolibro.php" class="inicio">Registrar audiolibro</a>
                 <a href="../include/cerrars.php" class="registro">Cerrar Sesión</a>

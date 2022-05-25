@@ -29,7 +29,7 @@
                 <h2><img src="../img/logo1.png" alt=""> ACERCA DE NOSOTROS</h2>
                 <nav class="navigation">
                     <ul>
-                        <li><a class="pagprinc" href="../indexU.php">Atras</a></li>
+                        <li><a class="pagprinc" href="../indexU.php">Atrás</a></li>
                     </ul>
                 </nav>
             </div>

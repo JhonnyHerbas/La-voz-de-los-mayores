@@ -28,8 +28,8 @@
 <body>
     <div class="general">
         <div class="container-superior">
-            <a href="../index.php"><img class="logo" src="../img/logo1.png"></a>
-            <h1 class="title">La Voz de los mayores -  Seccion Historias</h1>
+            <a href="../indexU.php"><img class="logo" src="../img/logo1.png"></a>
+            <h1 class="title">La Voz de los mayores - Historias</h1>
             <div class="registro-inicio">
                 <a href="../php/register_historia.php" class="inicio">Registrar historia</a>
                 <a href="../include/cerrars.php" class="registro">Cerrar Sesión</a>
@@ -49,7 +49,7 @@
                         <td class='t1'><b>N°</b></td>
                         <td class='t2'><b>Historia</b></td>
                         <td class='t3'><b>Usuario</b></td>
-                        <td class='t4'><b>Descripcion</b></td>
+                        <td class='t4'><b>Descripción</b></td>
                     </tr>
                 </table>
             </div>

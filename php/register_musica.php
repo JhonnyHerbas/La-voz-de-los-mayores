@@ -16,7 +16,7 @@
 <html lang="es">
 
 <head>
-  <title>Registrar Musica - La voz de los mayores</title>
+  <title>Registrar Música - La voz de los mayores</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -42,7 +42,7 @@
     <div class="container-medio">
       <div class="form-register">
         <form action="subir_musica.php" method="post" enctype="multipart/form-data">
-          <h2 class="form-title">Registrar Musica</h2>
+          <h2 class="form-title">Registrar Música</h2>
           <div class="block">
             <label>Nombre : </label>
             <input required name="name" id="name" type="text" maxlength="50" 
@@ -64,13 +64,13 @@
               <option>Rock</option>
               <option>Electrónica</option>
               <option>Pop</option>
-              <option>Clasica</option>
+              <option>Clásica</option>
               <option>Country</option>
               <option>Metal</option>
               <option>Folklorica</option>
               <option>Jazz</option>
               <option>Salsa</option>
-              <option>Regueton</option>
+              <option>Reguetón</option>
               <option>Punk</option>
               <option>Disco</option>
               <option>Hip Hop</option>

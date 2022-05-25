@@ -15,7 +15,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Legal</title>
+        <title>Legal-  La voz de los mayores</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="../img/logo1.png">
@@ -28,7 +28,7 @@
                 <h2><img src="../img/logo1.png" alt=""> LEGAL</h2>
                 <nav class="navigation">
                     <ul>
-                        <li><a class="pagprinc" href="../indexU.php"">Atras</a></li>
+                        <li><a class="pagprinc" href="../indexU.php"">Atrás</a></li>
                     </ul>
                 </nav>
             </div>

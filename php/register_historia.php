@@ -46,7 +46,7 @@
                 <form action="subir_historia.php" method="post" enctype="multipart/form-data" class="form-disable">
                     <h2 class="form-title">Registrar Historia</h2>
                     <div class="block">
-                        <label>Titulo : </label>
+                        <label>Título : </label>
                         <input required type="text" maxlength="50" name="name" id="name"
                         required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
                         >

@@ -19,7 +19,7 @@
             header("location:indexU.php") ;
          }else{
             $mensaje.="<div class='message'><img src='img/error.png'>
-                                <h4>Verifique sus datos. Gracias!</h4></div>";      
+                                <h4>Verifique sus datos. ¡Gracias!</h4></div>";      
          }
     }
 ?>
@@ -29,7 +29,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio sesion - La voz de los mayores</title>
+    <title>Inicio sesión - La voz de los mayores</title>
     <link rel="stylesheet" href="css/estilos_login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="shortcut icon" href="img/logo1.png">
