@@ -14,9 +14,24 @@
         $row_cont = $validar_inicio->num_rows;
 
          if($row_cont >0){
+             $var= $_SESSION['var'];
+             if($var == 1){
+                $_SESSION['login']=TRUE;
+                $_SESSION['NOMBRE_U']=$usuario1;
+               header("location:html/musicaU.php") ;
+             } elseif($var==2){
+                $_SESSION['login']=TRUE;
+                $_SESSION['NOMBRE_U']=$usuario1;
+               header("location:html/audiolibroU.php") ;
+             } elseif ($var == 3){
+                $_SESSION['login']=TRUE;
+                $_SESSION['NOMBRE_U']=$usuario1;
+               header("location:html/historiaU.php") ;
+             }else{
              $_SESSION['login']=TRUE;
              $_SESSION['NOMBRE_U']=$usuario1;
             header("location:indexU.php") ;
+             }
          }else{
             $mensaje.="<div class='message'><img src='img/error.png'>
                                 <h4>Verifique sus datos. ¡Gracias!</h4></div>";      

@@ -120,10 +120,25 @@
         }
             $ejecutar = mysqli_query($connection,$query);
 
-            if($ejecutar){              
-                $_SESSION['login']=TRUE;
-                $_SESSION['NOMBRE_U']=$nombre_usuario;
-               header("location:indexU.php") ;
+            if($ejecutar){ 
+                $var= $_SESSION['var'];
+                if($var == 1){
+                    $_SESSION['login']=TRUE;
+                    $_SESSION['NOMBRE_U']=$nombre_usuario;
+                     header("location:html/musicaU.php") ;
+                 } elseif($var==2){
+                    $_SESSION['login']=TRUE;
+                    $_SESSION['NOMBRE_U']=$nombre_usuario;
+                    header("location:html/audiolibroU.php") ;
+                 } elseif ($var == 3){
+                    $_SESSION['login']=TRUE;
+                    $_SESSION['NOMBRE_U']=$nombre_usuario;
+                    header("location:html/historiaU.php") ;
+                 }else{
+                    $_SESSION['login']=TRUE;
+                    $_SESSION['NOMBRE_U']=$nombre_usuario;
+                    header("location:indexU.php") ;
+                 }
             }else{
                 echo "<!DOCTYPE html>
                 <html lang='es'>
