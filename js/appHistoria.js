@@ -120,7 +120,7 @@ $(function () {
                     sourceAudio.setAttribute('src', `http://docs.google.com/uc?export=open&id=${link.ENLACE_H}`)
 
                     template2 += `<h1 id="nombreM">${link.TITULO_H}</h1>`
-                    template3 += `<h3 id="nombreM">${link.ID_H}</h3>`
+                    template3 += `<h3 id="nombreM">${link.NOMBRE_U}</h3>`
                 }
                 );
 
