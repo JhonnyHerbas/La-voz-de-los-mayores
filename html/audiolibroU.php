@@ -59,7 +59,7 @@
                 </table>
             </div>
             <div class="lista-musica" id="lista-musica">
-                      <h2 class='alerta'>No se ha encontrado ningún resultado</h2>
+                      <h2 class='alerta'>No se ha registrado ningún archivo</h2>
             </div>
         </div>
         <div class="container-inferior">
