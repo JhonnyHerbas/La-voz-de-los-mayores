@@ -129,6 +129,7 @@
     color: aliceblue;
     font-family: Tahoma;
     font-size: 23px;
+    cursor: pointer;
   }
   .container-inferior {
     background-color: #555855;
