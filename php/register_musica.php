@@ -47,14 +47,14 @@
             <label>Nombre : </label>
             <input required name="name" id="name" type="text" maxlength="50" 
             required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
-            >
+            spellcheck="false" minlength="3">
 
           </div>
           <div class="block">
             <label> Artista : </label>
             <input required name="artista" id="artista" type="text" maxlength="50" 
             required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
-            >
+            spellcheck="false" minlength="3">
           </div>
           <div class="block">
             <label> Género : </label>

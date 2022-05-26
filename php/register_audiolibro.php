@@ -49,19 +49,19 @@
                         <label>Nombre : </label>
                         <input required type="text" maxlength="50" name="name" id="name"
                         required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
-                        >
+                        spellcheck="false" minlength="3">
                     </div>
                     <div class="block">
                         <label>Autor : </label>
                         <input required type="text" maxlength="50" name="autor" id="autor"
                         required onkeyup = "this.value=this.value.replace(/^\s+/,'');"
-                        >
+                        spellcheck="false" minlength="3">
                     </div>
                     <div class="block">
                         <label>Narrador : </label>
                         <input  type="text" maxlength="50" name="narrador" id="narrador"
                          onkeyup = "this.value=this.value.replace(/^\s+/,'');"
-                        >
+                         spellcheck="false" minlength="3">
                     </div>
                     <div class="block">
                         <label>Género : </label>
