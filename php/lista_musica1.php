@@ -7,7 +7,7 @@
 
     if(empty($buscar)){
 
-        $query = "select ID_M,NOMBRE_M,AUTOR_M,CATEGORIA_M from MUSICA ";
+        $query = "select ID_M,NOMBRE_M,AUTOR_M,CATEGORIA_M from MUSICA ORDER BY ID_M";
         $result=mysqli_query($connection, $query);
         if(!$result){
             die('Quey Error'.mysqli_error($connection));
@@ -29,7 +29,7 @@
     }else{
        
         $query = "select ID_M,NOMBRE_M,AUTOR_M,CATEGORIA_M from MUSICA where NOMBRE_M like '%".$buscar."%' 
-        OR AUTOR_M like '%".$buscar."%' OR CATEGORIA_M like '%".$buscar."%'";
+        OR AUTOR_M like '%".$buscar."%' OR CATEGORIA_M like '%".$buscar."%' ORDER BY ID_M";
         $result=mysqli_query($connection, $query);
         if(!$result){
             die('Quey Error'.mysqli_error($connection));

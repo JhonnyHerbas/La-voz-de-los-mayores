@@ -44,7 +44,7 @@
                     </div>
                 <div class="buscador">
                     <input type="search" class="buscar" name="busqueda" id="busqueda" placeholder="Buscar"
-                    maxlength="50"  spellcheck="false" >
+                    maxlength="50"  spellcheck="false" required onkeyup = "this.value=this.value.replace(/^\s+/,'');">
                 </div>
             </div>
             <br>

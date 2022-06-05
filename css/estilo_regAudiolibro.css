@@ -171,13 +171,14 @@ select{
     justify-content: center;
     width: 20%;
     height: 40px;
-    background: #555855;
+    background: #efb364;
     color: rgb(255, 255, 255);
     font-family: Tahoma;
     font-size: 23px;
     position: relative;
-    cursor: pointer;
-
+    border-color: #f07f06;
+    border-width: 3px;
+    border-style: solid;
 }
 .cancelar{
     align-items: center;
