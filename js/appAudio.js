@@ -35,7 +35,7 @@ $(function () {
                                                 </td>
                                                 <td class='nombre'>${audiolibro.NOMBRE_AL}</td>
                                                 <td class='autor'>${audiolibro.AUTOR_AL}</td>
-                                                <td class='genero'>${audiolibro.NARRADOR_AL}</td>
+                                                <td class='narrador'>${audiolibro.NARRADOR_AL}</td>
                                                 <td class='genero'>${audiolibro.CATEGORIA_AL}</td>
                                             </tr>
                                         </table><br>
@@ -67,7 +67,7 @@ $(function () {
                                 </td>
                                 <td class='nombre'>${audiolibro.NOMBRE_AL}</td>
                                 <td class='autor'>${audiolibro.AUTOR_AL}</td>
-                                <td class='genero'>${audiolibro.NARRADOR_AL}</td>
+                                <td class='narrador'>${audiolibro.NARRADOR_AL}</td>
                                 <td class='genero'>${audiolibro.CATEGORIA_AL}</td>
                             </tr>
                         </table><br>

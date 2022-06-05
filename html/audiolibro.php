@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reproductor Audiolibro - La voz de los mayores</title>
-    <link rel="stylesheet" href="../css/estilo_musica.css" />
+    <link rel="stylesheet" href="../css/estilo_audiolibros.css" />
     <link rel="shortcut icon" href="../img/logo1.png">
 </head>
 
@@ -44,7 +44,7 @@
                         <td class='t2'><b>Audiolibro</b></td>
                         <td class='t3'><b>Autor</b></td>
                         <td class='t4'><b>Narrador</b></td>
-                        <td class='t4'><b>Género</b></td>
+                        <td class='t5'><b>Género</b></td>
                     </tr>
                 </table>
             </div>

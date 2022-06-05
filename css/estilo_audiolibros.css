@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    position: relative;
+    top: 10px;    
+}
+body {
+    background-color: white;
+    min-width: 930px;
+}
+
+.general{
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+}
+.container-superior {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #555855;
+    text-align: center;
+}
+.logo {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    height: 50px;
+    width: 50px;
+    right: -25px;
+    top: 25px;
+    float: left;
+}
+.title{
+    text-shadow: 5px 5px 3px black;
+    position: relative;
+    top: 25px;
+    left: 50px;
+    font-size: 30px;
+    color: white;
+    float: left;
+}
+.container-medio{
+    background-color: #f19236;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /*overflow: auto;*/
+}
+/**.container-medio::-webkit-scrollbar{
+    width: 7px;
+}
+.container-medio::-webkit-scrollbar-thumb{
+    background: #ff9d00;
+	border-radius: 5px;
+}*/
+.container-inferior{
+    background-color: #555855;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.info-musica {
+    color: white;
+    position: relative;
+    top: 25px;
+    margin-left: 15px;
+    width: 500px;
+    height: 50px;
+}
+.boton-anterior {
+    background-color: transparent !important;
+    border: none;
+}
+.boton-siguiente {
+    position: relative;
+    transform: scaleX(-1);
+    background-color: transparent !important;
+    margin-right: auto;
+    border: none;
+}
+.herramientas {
+    position: relative;
+    top: 25px;
+    width: 40%;
+    height: 50px;
+}
+.anterior {
+    width: 40px;
+    position: relative;
+    left: 0%;
+}
+.busqueda{
+    width: 80%;
+    height: 40px;
+    margin: 0px auto;
+    text-align: right;
+    align-items: center;
+    justify-content: right;
+    display: flex;
+}
+.buscador{
+    width: 40%;
+    height: 40px;
+}
+.lupa{
+    background-color: #555855;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.lupita{
+    margin: 0px auto;
+}
+#busqueda{
+    width: 100%;
+    height: 40px;
+    margin: 0px auto;
+    font-size: 20px;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+input{
+    margin-top: 1%;
+    background:#555855 ;
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: 0px;
+    font-size: 18px;
+}
+.lista-musica{
+    margin: auto;
+    top: 5%;
+    background-color: #555855;
+    position: relative;
+    /*margin-right: 10%;
+    margin-left: 10%;*/
+    width: 80%;
+    height: 70%;
+    box-shadow: 5px 9px 3px black;
+    overflow: auto;
+}
+.lista-musica::-webkit-scrollbar{
+    width: 15px;
+}
+.lista-musica::-webkit-scrollbar-thumb{
+    background: #ffc172;
+	border-radius: 10px;
+}
+.lista-musica::-webkit-scrollbar-thumb:hover{
+    background: #ffffff;
+}
+.lista-musica::-webkit-scrollbar-track{
+    background: #666666;
+    border-radius: 10px;
+}
+.audio-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.audio-class{
+    left: auto;
+    width: 100%;
+}
+.container-musica{
+    background-color:#ffc172;
+    width: 80%;
+    height: 7%;
+    margin: auto;
+    box-shadow: 5px 5px 3px black;
+}
+.botones{
+    text-align: center;
+    justify-content: center;
+    background-color: #ffc172;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.container-musica:hover{
+    background-color: #f19236;
+    transition: 100ms;
+    width: 80%;
+    height: 7%;
+    margin: auto;
+    box-shadow: 5px 9px 3px black;
+}
+.id{
+    width: 5%;
+    height: 40px;
+    text-align: left;
+    position: relative;
+    vertical-align: middle;
+}
+.nombre{
+    width: 25%;
+    text-align: left;
+    vertical-align: middle;
+}
+.autor{
+    width: 25%;
+    text-align: left;
+    vertical-align: middle;
+}
+.narrador{
+    width: 25%;
+    text-align: left;
+    vertical-align: middle;
+}
+.genero{
+    width: 15%;
+    text-align: left;
+    vertical-align: middle;
+}
+.fechaPublicacion{
+    width: 18%;
+    text-align: left;
+    vertical-align: middle;
+}
+.tiempo{
+    width: 10%;
+    text-align: left;
+    vertical-align: middle;
+}
+.t1{
+    width: 10%;
+    height: 40px;
+    text-align: left;
+    position: relative;
+    vertical-align: middle; 
+    color: white;
+}
+.t2{
+    width: 24%;
+    text-align: left;
+    vertical-align: middle;
+    color: white;
+}
+.t3{
+    width: 24%;
+    text-align: left;
+    vertical-align: middle;
+    color: white;
+}
+.t4{
+    width: 24%;
+    text-align: left;
+    vertical-align: middle;
+    color: white;
+}
+.t5{
+    width: 17%;
+    text-align: left;
+    vertical-align: middle;
+    color: white;
+}
+.title-musica{
+    background-color: #555855;
+    width: 80%;
+    height: 9%;
+    margin: auto;
+    box-shadow: 5px 5px 3px #211f21;
+}
+h4{
+    font-size: 10px;
+}
+h1{
+    font-size: 20px;
+}
+h3{
+    font-weight: 100;
+}
+button{
+    cursor: pointer;
+}
+.lista{
+    width: 100%;
+    height: 30px;
+    background: transparent !important;
+    border: none;
+}
+.titulos{
+    position: relative;
+   /* left: 10%;*/
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+.plays{
+    width: 5%;
+}
+.tabla-audio{
+    width: 100%;
+}
+.registro-inicio{
+    position: relative;
+    top: 37.5px;
+    float: right;
+    left: -25px;
+    display: inline;
+}
+.registro-inicio a{
+    text-decoration: none;
+    color: white;
+}
+.inicio{
+    position: relative;
+    left: -25px;
+}
+.inicio:hover{
+    color: #f98009;
+}
+.registro:hover{
+    color: #f98009;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.alerta{
+    color: white;
+    margin: 0px auto;
+    margin-top: 15%;
+    font-size: 30px;
+}
