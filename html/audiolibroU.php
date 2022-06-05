@@ -54,7 +54,7 @@
                         <td class='t2'><b>Audiolibro</b></td>
                         <td class='t3'><b>Autor</b></td>
                         <td class='t4'><b>Narrador</b></td>
-                        <td class='t4'><b>Género</b></td>
+                        <td class='t5'><b>Género</b></td>
                     </tr>
                 </table>
             </div>
