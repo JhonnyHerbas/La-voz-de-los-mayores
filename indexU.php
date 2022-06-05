@@ -42,15 +42,21 @@
         </div>        
         <div class="container-medio">
             <div class="container-musica">
-                <a class="logmusica" href="html/musicaU.php"><img class="logomusica" src="img/musica.png" /></a><br>
+                <div class="imagen-logo">
+                    <a class="logmusica" href="html/musica.php"><img class="logomusica" src="img/musica.png" /></a><br>
+                </div>
                 <a class="musica">Música</a>
             </div>
             <div class="container-musica">
-                <a class="logmusica" href="html/audiolibroU.php"><img class="logomusica" src="img/logo-audio.png" /></a><br>
+                <div class="imagen-logo">
+                    <a class="logmusica" href="html/audiolibro.php"><img class="logomusica" src="img/logo-audio.png" /></a><br>
+                </div>
                 <a class="musica">Audiolibro</a>
             </div>
             <div class="container-musica">
-                <a class="logmusica" href="html/historiaU.php"><img class="logomusica" src="img/microfono.png" /></a><br>
+                <div class="imagen-logo">
+                    <a class="logmusica" href="html/historia.php"><img class="logomusica" src="img/microfono.png" /></a><br>
+                </div>
                 <a class="musica">Historia</a>
             </div>
         </div>

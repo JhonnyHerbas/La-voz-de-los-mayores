@@ -114,7 +114,16 @@ h4{
     height: 120px;
 }
 
-.logomusica {
+.imagen-logo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: red;
+}
+
+.imagen-logo img {
     display: block;
     justify-self: center;
     width: 200px;
